@@ -1,0 +1,7 @@
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\bin\Debug\Application de test.exe.config
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\bin\Debug\Application de test.exe
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\bin\Debug\Application de test.pdb
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\obj\Debug\Application de test.csprojAssemblyReference.cache
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\obj\Debug\Application de test.csproj.CoreCompileInputs.cache
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\obj\Debug\Application de test.exe
+C:\Users\jcgroleau\Documents\Test C#\Application de test\Application de test\obj\Debug\Application de test.pdb
