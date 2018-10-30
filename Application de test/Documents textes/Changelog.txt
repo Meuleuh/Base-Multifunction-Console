@@ -1,0 +1,13 @@
+﻿[Changelog]
+
+Liste des composantes | Version actuelle:
+-----------------------------------------------------------------
+|	- Console multi-fonctionnelle basique	| Version Pre-1.0.0 |
+|	- Calculatrice							| Version Pre-1.0.0 |
+-----------------------------------------------------------------
+
+{Console multi-fonctionnelle basique}
+(Rien à noter, la version 1.0.0 n'est pas encore atteinte)
+
+{Calculatrice}
+(Rien à noter, la version 1.0.0 n'est pas encore atteinte)
