@@ -1,4 +1,5 @@
-﻿[Changelog]
+﻿[Changelog] 
+ (It may not seems really good online, you must know that the original indent size was 4 and not 8 like GitHub displays online)
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃			Liste des composantes			┃	Version actuelle  ┃
