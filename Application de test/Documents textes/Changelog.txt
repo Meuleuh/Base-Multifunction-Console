@@ -1,13 +1,25 @@
 ﻿[Changelog]
 
-Liste des composantes | Version actuelle:
------------------------------------------------------------------
-|	- Console multi-fonctionnelle basique	| Version Pre-1.0.0 |
-|	- Calculatrice							| Version Pre-1.0.0 |
------------------------------------------------------------------
+-------------------------------------------------------------------
+|			Liste des composantes			| Version actuelle 	  |
+-------------------------------------------------------------------
+|	- Console multi-fonctionnelle basique	|				1.0.0 |
+|	- Calculatrice							|				1.0.0 |
+-------------------------------------------------------------------
 
 {Console multi-fonctionnelle basique}
-(Rien à noter, la version 1.0.0 n'est pas encore atteinte)
+[1.X]
+	[1.0.X]
+		[1.0.0]
+		La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
+		Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
+		en charge pour le moment.
 
 {Calculatrice}
-(Rien à noter, la version 1.0.0 n'est pas encore atteinte)
+[1.X]
+	[1.0.X]
+		[1.0.0]
+		La calculatrice peut être utilisé pour faire des additions entre deux constantes. Cependant, si on rentre une
+		valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
+		directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
+		de redémarrer à partir du début.

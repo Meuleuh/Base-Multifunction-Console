@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application_de_test
 {
@@ -17,6 +13,7 @@ namespace Application_de_test
                 Console.Clear();
                 Console.WriteLine("Entrez le programme voulu");
                 Console.WriteLine("Liste des programmes (aucune erreur de frappe est accepté, incluant l'absence d'une majuscule");
+                Console.WriteLine("- CalculatriceOld");
                 Console.WriteLine("- Calculatrice");
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi == "Calculatrice")
@@ -31,55 +28,87 @@ namespace Application_de_test
                     Console.ReadKey();
                 }
             }
-        } //Version Pre-1.0.0
+        } //Version 1.0.0
         
         //Les fonctions
 
         static void Calculatrice()
         {
+            Console.Clear();
+            Console.WriteLine("Voici les opérations pouvant être sélectionnées");
+            FonctionsSelectionnables();
+            string FonctionSelectionne = Console.ReadLine();
+                if (FonctionSelectionne == "Addition" || FonctionSelectionne == "Add")
+                {
+                    Addition();
+                }
+                else
+                {
+                    Console.WriteLine("Cette fonction n'existe pas dans le contexte donné");
+                    Console.WriteLine("Appuyez sur une touche pour continuer");
+                    Console.ReadKey();
+                    Calculatrice();
+                }
+
+            //Les fonctions essentielles et universelles de la calculatrice
+
+            (decimal, decimal) GetTwoVariable(out decimal valX, out decimal valY)
+            {
+                Console.Clear();
+                Console.WriteLine("Quel est la valeur de X ?");
+                string valXTemp = Console.ReadLine();
+                try
+                {
+                    decimal valXError = Convert.ToDecimal(valXTemp);
+                }
+                catch
+                {
+                    ExceptionCaughtInTheVariable();
+                }
+                valX = Convert.ToDecimal(valXTemp);
+                Console.WriteLine("Quel est la valeur de Y ?");
+                string valYTemp = Console.ReadLine();
+                try
+                {
+                    decimal valYError = Convert.ToDecimal(valYTemp);
+                }
+                catch
+                {
+                    ExceptionCaughtInTheVariable();
+                }
+                valY = Convert.ToDecimal(valYTemp);
+                return (valY, valY);
+            }
+
             void ExceptionCaughtInTheVariable()
             {
-                Console.WriteLine("Il est impossible de calculer autre chose que des chiffres ensemble");
-                Console.WriteLine("Appuyez sur une touche pour redémarrer la calculatrice");
+                Console.WriteLine("La variable ne peut pas être autre chose qu'un nombre");
+                Console.WriteLine("Appuyez sur une touche pour recommencer la calculatrice");
                 Console.ReadKey();
                 Calculatrice();
-            }
-            Console.Clear();
-            Console.WriteLine("Entrez la valeur de X");
-            string strValX = Console.ReadLine();
-            try
+            } 
+            //Fonction utile pour éviter les répétition d'un message d'erreur dans le code.
+            //Il va falloir que l'on rajoutes le fait de recommencer la fonction en cours au lieu de recommencer la calculatrice
+
+            void FonctionsSelectionnables()
             {
-                Double valXErr = Convert.ToDouble(strValX);
-            }
-            catch (Exception)
+                Console.WriteLine("- Addition");
+            } //Fonction pour écrire toutes les fonctions sélectionnables
+
+            //Les fonctions de la calculatrice
+
+            void Addition()
             {
-                ExceptionCaughtInTheVariable();
+                decimal valX;
+                decimal valY;
+                GetTwoVariable(out valX, out valY);
+                Console.Clear();
+                Console.WriteLine("Valeur de X: " + valX);
+                Console.WriteLine("Valeur de Y: " + valY);
+                Console.WriteLine("Somme (X + Y): "+ (valX + valY));
+                Console.WriteLine("Appuyez sur une touche pour fermer la console");
+                Console.ReadKey();
             }
-            Console.WriteLine("Entrez la valeur de Y");
-            string strValY = Console.ReadLine();
-            try
-            {
-                Double valYErr = Convert.ToDouble(strValY);
-            }
-            catch (Exception)
-            {
-                ExceptionCaughtInTheVariable();
-            }
-            Double valX = Convert.ToDouble(strValX);
-            Double valY = Convert.ToDouble(strValY);
-            Console.WriteLine("Addition :" + (valX + valY));
-            Console.WriteLine("Soustraction :" + (valX - valY));
-            Console.WriteLine("Multiplication :" + (valX * valY));
-            try
-            {
-                Console.WriteLine("Division :" + (valX / valY));
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Il est impossible de diviser par zéro");
-            }
-            Console.WriteLine("Appuyez sur une touche pour terminer le programme");
-            Console.ReadKey();
-        } //Version Pre-1.0.0
+        } //Version 1.0.0
     }
 }
