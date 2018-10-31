@@ -1,11 +1,11 @@
-﻿[Changelog] (Caractères spéciaux utiles à la mise en forme: ┣━ | ┗━ | ┃)
+﻿[Changelog]
 
--------------------------------------------------------------------
-|			Liste des composantes			|	Version actuelle  |
--------------------------------------------------------------------
-|	- Console multi-fonctionnelle basique	|				1.0.0 |
-|	- Calculatrice							|				1.0.0 |
--------------------------------------------------------------------
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
+┃			Liste des composantes			┃	Version actuelle  ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
+┃	- Console multi-fonctionnelle basique	┃				1.0.0 ┃
+┃	- Calculatrice							┃				1.0.0 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
 [1.X]
@@ -14,7 +14,8 @@
 		La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
 		Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
 		en charge pour le moment.
-------------------------------------------------------------------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 {Calculatrice}
 [1.X]
@@ -24,4 +25,5 @@
 		valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
 		directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
 		de redémarrer à partir du début.
-------------------------------------------------------------------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
