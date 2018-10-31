@@ -13,7 +13,6 @@ namespace Application_de_test
                 Console.Clear();
                 Console.WriteLine("Entrez le programme voulu");
                 Console.WriteLine("Liste des programmes (aucune erreur de frappe est accepté, incluant l'absence d'une majuscule");
-                Console.WriteLine("- CalculatriceOld");
                 Console.WriteLine("- Calculatrice");
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi == "Calculatrice")

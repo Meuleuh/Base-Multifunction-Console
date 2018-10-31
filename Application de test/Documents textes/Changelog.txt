@@ -1,7 +1,7 @@
 ﻿[Changelog]
 
 -------------------------------------------------------------------
-|			Liste des composantes			| Version actuelle 	  |
+|			Liste des composantes			|	Version actuelle  |
 -------------------------------------------------------------------
 |	- Console multi-fonctionnelle basique	|				1.0.0 |
 |	- Calculatrice							|				1.0.0 |
