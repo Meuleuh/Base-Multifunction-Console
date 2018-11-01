@@ -1,6 +1,5 @@
 ﻿[Addition]
-Peut être demandé en écrivant "Addition" ou "Add". Les majuscules sont obligatoires pour que ça marche et aucune
-autre forme d'écriture n'est toléré.
+Peut être demandé en écrivant "Addition" ou "Add". Les majuscules ne sont plus obligatoires depuis la version 1.0.2 de la calculatrice, mais aucune autre forme d'écriture n'est tolérée.
 
 Elle fonctionne ainsi:
 - Demande la valeur de X

@@ -15,14 +15,14 @@ namespace Application_de_test
             FonctionsSelectionnables();
             Console.Write("Fonction voulue:");
             string FonctionSelectionne = Console.ReadLine();
-            if (FonctionSelectionne == "Addition" || FonctionSelectionne == "Add")
+            if (FonctionSelectionne.ToLower() == "addition" || FonctionSelectionne == "add")
             {
                 Addition();
             }
             else
             {
                 Console.WriteLine("Cette fonction n'existe pas dans le contexte donné");
-                Console.WriteLine("Appuyez sur une touche pour continuer");
+                Console.WriteLine("Appuyez sur une touche pour recommencer");
                 Console.ReadKey();
                 Calculatrice();
             }
@@ -86,6 +86,6 @@ namespace Application_de_test
                 Console.WriteLine("Appuyez sur une touche pour fermer la console");
                 Console.ReadKey();
             }
-        } //Version 1.0.1
+        } //Version 1.0.2
     }
 }

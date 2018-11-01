@@ -6,8 +6,8 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               1.0.1 ┃
-┃   - Calculatrice                          ┃               1.0.1 ┃
+┃   - Console multi-fonctionnelle basique   ┃               1.0.2 ┃
+┃   - Calculatrice                          ┃               1.0.2 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
@@ -17,8 +17,10 @@ d'une autre composante car seule cette dernière a été affectée.
     ┃     La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
     ┃     Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
     ┃     en charge pour le moment.
-    ┗━━━━━[1.0.1]
-	      {Voir le changelog de la calculatrice version 1.0.1}
+    ┣━━━━━[1.0.1]
+	┃     {Voir le changelog de la calculatrice version 1.0.1}
+    ┗━━━━━[1.0.2]
+          {Voir le changelog de la calculatrice version 1.0.2}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -30,7 +32,9 @@ d'une autre composante car seule cette dernière a été affectée.
     ┃     valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
     ┃     directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
     ┃     de redémarrer à partir du début.
-    ┗━━━━━[1.0.1]
-	      Ajout de texte lors de la sélection de la fonction à exécuter
+    ┣━━━━━[1.0.1]
+	┃     Ajout de texte lors de la sélection de la fonction à exécuter
+    ┗━━━━━[1.0.2]
+          Ajout de la tolérence des minuscules et majuscule lors de l'appel de la fonction "addition"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
