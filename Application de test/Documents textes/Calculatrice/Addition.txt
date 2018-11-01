@@ -1,0 +1,14 @@
+﻿[Addition]
+Peut être demandé en écrivant "Addition" ou "Add". Les majuscules sont obligatoires pour que ça marche et aucune
+autre forme d'écriture n'est toléré.
+
+Elle fonctionne ainsi:
+- Demande la valeur de X
+- Si la valeur de X ne peut pas être transformée en variable decimal, redémarre la calculatrice après que l'utilisateur aie appuyé sur une touche
+- Si la valeur de X peut être transformée en variable decimal, continue le programme
+- Demande la valeur de Y
+- Si la valeur de Y ne peut pas être transformée en variable decimal, redémarre la calculatrice après que l'utilisateur aie appuyé sur une touche
+- Si la valeur de Y peut être transformée en variable decimal, continue le programme
+- Calcul X + Y
+- Retourne la valeur du calcul
+- Lorsque l'utilisateur appuie sur une touche, la console se ferme
