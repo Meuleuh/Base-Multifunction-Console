@@ -13,6 +13,7 @@ namespace Application_de_test
             Console.Clear();
             Console.WriteLine("Voici les opérations pouvant être sélectionnées");
             FonctionsSelectionnables();
+            Console.Write("Fonction voulue:");
             string FonctionSelectionne = Console.ReadLine();
             if (FonctionSelectionne == "Addition" || FonctionSelectionne == "Add")
             {
@@ -85,6 +86,6 @@ namespace Application_de_test
                 Console.WriteLine("Appuyez sur une touche pour fermer la console");
                 Console.ReadKey();
             }
-        } //Version 1.0.0
+        } //Version 1.0.1
     }
 }
