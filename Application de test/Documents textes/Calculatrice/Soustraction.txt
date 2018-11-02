@@ -1,5 +1,5 @@
-﻿[Addition]
-Peut être demandé en écrivant "Addition" ou "Add" ou "Plus". Les majuscules ne sont pas obligatoires, mais aucune autre forme d'écriture n'est tolérée.
+﻿[Soustraction]
+Peut être demandé en écrivant "Soustraction" ou "Moins" ou "Minus". Les majuscules ne sont pas obligatoires, mais aucune autre forme d'écriture n'est tolérée.
 
 Elle fonctionne ainsi:
 - Demande la valeur de X
@@ -8,6 +8,6 @@ Elle fonctionne ainsi:
 - Demande la valeur de Y
 - Si la valeur de Y ne peut pas être transformée en variable decimal, redémarre la calculatrice après que l'utilisateur aie appuyé sur une touche
 - Si la valeur de Y peut être transformée en variable decimal, continue le programme
-- Calcul X + Y
+- Calcul X - Y
 - Retourne la valeur du calcul
 - Lorsque l'utilisateur appuie sur une touche, la console se ferme

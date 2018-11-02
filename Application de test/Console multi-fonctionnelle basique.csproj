@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Documents textes\Calculatrice\Addition.txt" />
+    <Content Include="Documents textes\Calculatrice\Soustraction.txt" />
     <Content Include="Documents textes\Changelog.txt" />
     <Content Include="Documents textes\Infos.txt" />
   </ItemGroup>

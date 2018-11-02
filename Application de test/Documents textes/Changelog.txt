@@ -6,35 +6,43 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               1.0.2 ┃
-┃   - Calculatrice                          ┃               1.0.2 ┃
+┃   - Console multi-fonctionnelle basique   ┃               1.1.0 ┃
+┃   - Calculatrice                          ┃               1.1.0 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
 [1.X]
-┗━━━[1.0.X]
-    ┣━━━━━[1.0.0]
-    ┃     La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
-    ┃     Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
-    ┃     en charge pour le moment.
-    ┣━━━━━[1.0.1]
-	┃     {Voir le changelog de la calculatrice version 1.0.1}
-    ┗━━━━━[1.0.2]
-          {Voir le changelog de la calculatrice version 1.0.2}
+┣━━━[1.0.X]
+┃   ┣━━━━━[1.0.0]
+┃   ┃     La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
+┃   ┃     Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
+┃   ┃     en charge pour le moment.
+┃   ┣━━━━━[1.0.1]
+┃   ┃     {Voir le changelog de la calculatrice version 1.0.1}
+┃   ┗━━━━━[1.0.2]
+┃         {Voir le changelog de la calculatrice version 1.0.2}
+┗━━━[1.1.X]
+    ┗━━━━━[1.1.0]
+          {Voir le changelog de la calculatrice version 1.1.0}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 {Calculatrice}
 [1.X]
-┗━━━[1.0.X]
-    ┣━━━━━[1.0.0]
-    ┃     La calculatrice peut être utilisé pour faire des additions entre deux constantes. Cependant, si on rentre une
-    ┃     valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
-    ┃     directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
-    ┃     de redémarrer à partir du début.
-    ┣━━━━━[1.0.1]
-	┃     Ajout de texte lors de la sélection de la fonction à exécuter
-    ┗━━━━━[1.0.2]
-          Ajout de la tolérence des minuscules et majuscule lors de l'appel de la fonction "addition"
+┣━━━[1.0.X]
+┃   ┣━━━━━[1.0.0]
+┃   ┃     La calculatrice peut être utilisé pour faire des additions entre deux constantes. Cependant, si on rentre une
+┃   ┃     valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
+┃   ┃     directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
+┃   ┃     de redémarrer à partir du début.
+┃   ┣━━━━━[1.0.1]
+┃   ┃     Ajout de texte lors de la sélection de la fonction à exécuter
+┃   ┗━━━━━[1.0.2]
+┃         Ajout de la tolérence des minuscules et majuscule lors de l'appel de la fonction "addition"
+┗━━━[1.1.X]
+    ┗━━━━━[1.1.0]
+          Ajout de la fonction soustraction qui peut, comme son nom l'indique, faire des soustractions. Elle fonctionne
+		  identiquement à l'addition sauf qu'elle soustrait la valeur de Y de celle de X (X - Y). On peut également
+		  appeler la fonction addition en écrivant "Plus", avec ou sans la majuscule.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

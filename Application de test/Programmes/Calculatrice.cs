@@ -13,11 +13,15 @@ namespace Application_de_test
             Console.Clear();
             Console.WriteLine("Voici les opérations pouvant être sélectionnées");
             FonctionsSelectionnables();
-            Console.Write("Fonction voulue:");
+            Console.Write("Fonction voulue: ");
             string FonctionSelectionne = Console.ReadLine();
-            if (FonctionSelectionne.ToLower() == "addition" || FonctionSelectionne == "add")
+            if (FonctionSelectionne.ToLower() == "addition" || FonctionSelectionne.ToLower() == "add" || FonctionSelectionne.ToLower() == "plus")
             {
                 Addition();
+            }
+            else if (FonctionSelectionne.ToLower() == "soustraction" || FonctionSelectionne.ToLower() == "moins" || FonctionSelectionne.ToLower() == "minus")
+            {
+                Soustraction();
             }
             else
             {
@@ -70,6 +74,7 @@ namespace Application_de_test
             void FonctionsSelectionnables()
             {
                 Console.WriteLine("- Addition");
+                Console.WriteLine("- Soustraction");
             } //Fonction pour écrire toutes les fonctions sélectionnables
 
             //Les fonctions de la calculatrice
@@ -86,6 +91,19 @@ namespace Application_de_test
                 Console.WriteLine("Appuyez sur une touche pour fermer la console");
                 Console.ReadKey();
             }
-        } //Version 1.0.2
+
+            void Soustraction()
+            {
+                decimal valX;
+                decimal valY;
+                GetTwoVariable(out valX, out valY);
+                Console.Clear();
+                Console.WriteLine("Valeur de X: " + valX);
+                Console.WriteLine("Valeur de Y: " + valY);
+                Console.WriteLine("Différence (X - Y): " + (valX - valY));
+                Console.WriteLine("Appuyez sur une touche pour fermer la console");
+                Console.ReadKey();
+            }
+        } //Version 1.1.0
     }
 }
