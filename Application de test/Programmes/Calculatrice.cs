@@ -145,7 +145,8 @@ namespace Application_de_test
                 }
                 catch
                 {
-                    //Insérez ici une réponse au code d'erreur qui fait redémarrer la calculatrice
+                    Console.WriteLine("La valeur donnée est invalide et a retourné une erreur. Appuyer sur une touche pour redémarrer la calculatrice...");
+                    Calculatrice calculatrice = new Calculatrice();
                 }
                 decimal reponse = 0;
                 if (OperationVoulue.ToLower() == "addition")
