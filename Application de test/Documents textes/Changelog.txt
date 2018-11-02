@@ -6,8 +6,8 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               1.1.0 ┃
-┃   - Calculatrice                          ┃               1.1.0 ┃
+┃   - Console multi-fonctionnelle basique   ┃               1.1.1 ┃
+┃   - Calculatrice                          ┃               1.1.1 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
@@ -22,8 +22,10 @@ d'une autre composante car seule cette dernière a été affectée.
 ┃   ┗━━━━━[1.0.2]
 ┃         {Voir le changelog de la calculatrice version 1.0.2}
 ┗━━━[1.1.X]
-    ┗━━━━━[1.1.0]
-          {Voir le changelog de la calculatrice version 1.1.0}
+    ┣━━━━━[1.1.0]
+    ┃     {Voir le changelog de la calculatrice version 1.1.0}
+    ┗━━━━━[1.1.1]
+          {Voir le changelog de la calculatrice version 1.1.1}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -40,9 +42,16 @@ d'une autre composante car seule cette dernière a été affectée.
 ┃   ┗━━━━━[1.0.2]
 ┃         Ajout de la tolérence des minuscules et majuscule lors de l'appel de la fonction "addition"
 ┗━━━[1.1.X]
-    ┗━━━━━[1.1.0]
-          Ajout de la fonction soustraction qui peut, comme son nom l'indique, faire des soustractions. Elle fonctionne
-		  identiquement à l'addition sauf qu'elle soustrait la valeur de Y de celle de X (X - Y). On peut également
-		  appeler la fonction addition en écrivant "Plus", avec ou sans la majuscule.
+    ┣━━━━━[1.1.0]
+    ┃     Ajout de la fonction soustraction qui peut, comme son nom l'indique, faire des soustractions. Elle fonctionne
+	┃     identiquement à l'addition sauf qu'elle soustrait la valeur de Y de celle de X (X - Y). On peut également
+	┃     appeler la fonction addition en écrivant "Plus", avec ou sans la majuscule.
+    ┗━━━━━[1.1.1]
+          Ajout d'une fonction pour reprendre l'exécution de la calculatrice au début de la fonction appelée au lieu de
+		  juste redémarrer la calculatrice à partir de 0. Par exemple: Si on est en train d'utiliser la fonction
+		  soustraction et que l'on entre "e" pour la valeur Y, le message d'erreur va s'afficher et le programme va
+		  retourner au début de la fonction soustraction au lieu de retourner à l'écran de sélection de fonctions.
+		  Pour ce faire, un Environment.Exit(0) a été utilisé. Il va falloir qu'il soit remplacé lors de 
+		  l'implémentation de la mémoire dans le fonctionnement de la calculatrice.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

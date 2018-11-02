@@ -10,6 +10,7 @@ namespace Application_de_test
     {
         static void Calculatrice()
         {
+            string StatutEnCours = "Debut";
             Console.Clear();
             Console.WriteLine("Voici les opérations pouvant être sélectionnées");
             FonctionsSelectionnables();
@@ -28,7 +29,7 @@ namespace Application_de_test
                 Console.WriteLine("Cette fonction n'existe pas dans le contexte donné");
                 Console.WriteLine("Appuyez sur une touche pour recommencer");
                 Console.ReadKey();
-                Calculatrice();
+                RepriseApresErreur();
             }
 
             //Les fonctions essentielles et universelles de la calculatrice
@@ -45,6 +46,7 @@ namespace Application_de_test
                 catch
                 {
                     ExceptionCaughtInTheVariable();
+                    valXTemp = "0";
                 }
                 valX = Convert.ToDecimal(valXTemp);
                 Console.WriteLine("Quel est la valeur de Y ?");
@@ -56,17 +58,18 @@ namespace Application_de_test
                 catch
                 {
                     ExceptionCaughtInTheVariable();
+                    valYTemp = "0";
                 }
                 valY = Convert.ToDecimal(valYTemp);
-                return (valY, valY);
+                return (valX, valY);
             }
 
             void ExceptionCaughtInTheVariable()
             {
                 Console.WriteLine("La variable ne peut pas être autre chose qu'un nombre");
-                Console.WriteLine("Appuyez sur une touche pour recommencer la calculatrice");
+                Console.WriteLine("Appuyez sur une touche pour recommencer la fonction en cours");
                 Console.ReadKey();
-                Calculatrice();
+                RepriseApresErreur();
             }
             //Fonction utile pour éviter les répétition d'un message d'erreur dans le code.
             //Il va falloir que l'on rajoutes le fait de recommencer la fonction en cours au lieu de recommencer la calculatrice
@@ -77,33 +80,45 @@ namespace Application_de_test
                 Console.WriteLine("- Soustraction");
             } //Fonction pour écrire toutes les fonctions sélectionnables
 
+            void RepriseApresErreur()
+            {
+                if (StatutEnCours == "Addition")
+                {
+                    Addition();
+                }
+                else if (StatutEnCours == "Soustraction")
+                {
+                    Soustraction();
+                }
+            }
+
             //Les fonctions de la calculatrice
 
             void Addition()
             {
-                decimal valX;
-                decimal valY;
-                GetTwoVariable(out valX, out valY);
+                StatutEnCours = "Addition";
+                GetTwoVariable(out decimal valX, out decimal valY);
                 Console.Clear();
                 Console.WriteLine("Valeur de X: " + valX);
                 Console.WriteLine("Valeur de Y: " + valY);
                 Console.WriteLine("Somme (X + Y): " + (valX + valY));
                 Console.WriteLine("Appuyez sur une touche pour fermer la console");
                 Console.ReadKey();
+                Environment.Exit(0); //À remplacer lorsque la mémoire sera mise en place ou que l'on voudra que la calculatrice ne se ferme pas après l'exécution
             }
 
             void Soustraction()
             {
-                decimal valX;
-                decimal valY;
-                GetTwoVariable(out valX, out valY);
+                StatutEnCours = "Soustraction";
+                GetTwoVariable(out decimal valX, out decimal valY);
                 Console.Clear();
                 Console.WriteLine("Valeur de X: " + valX);
                 Console.WriteLine("Valeur de Y: " + valY);
                 Console.WriteLine("Différence (X - Y): " + (valX - valY));
                 Console.WriteLine("Appuyez sur une touche pour fermer la console");
                 Console.ReadKey();
+                Environment.Exit(0); //À remplacer lorsque la mémoire sera mise en place ou que l'on voudra que la calculatrice ne se ferme pas après l'exécution
             }
-        } //Version 1.1.0
+        } //Version 1.1.1
     }
 }
