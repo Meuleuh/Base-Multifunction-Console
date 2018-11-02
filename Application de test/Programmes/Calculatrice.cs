@@ -123,11 +123,9 @@ namespace Application_de_test
                 }
             }
         } //Version 1.1.1 */
-        class Calculatrice
+        public class Calculatrice
         {
-            //enum Opérations {addition, soustraction, multiplication, division, exposant, racine};
-
-            Calculatrice()
+            public Calculatrice()
             {
                 Console.Clear();
                 Console.WriteLine("Liste des opérations mathématiques");
@@ -147,31 +145,32 @@ namespace Application_de_test
                 }
                 catch
                 {
-                    //Insérez ici une réponse à un code d'erreur
+                    //Insérez ici une réponse au code d'erreur qui fait redémarrer la calculatrice
                 }
+                decimal reponse = 0;
                 if (OperationVoulue.ToLower() == "addition")
                 {
-                    Addition(out decimal reponse);
+                    Addition(out reponse);
                 }
                 else if (OperationVoulue.ToLower() == "soustraction")
                 {
-                    Soustraction(out decimal reponse);
+                    Soustraction(out reponse);
                 }
                 else if (OperationVoulue.ToLower() == "multiplication")
                 {
-                    Multiplication(out decimal reponse);
+                    Multiplication(out reponse);
                 }
                 else if (OperationVoulue.ToLower() == "division")
                 {
-                    Division(out decimal reponse);
+                    Division(out reponse);
                 }
                 else if (OperationVoulue.ToLower() == "exponentielle")
                 {
-                    Exponentielle(out decimal reponse);
+                    Exponentielle(out reponse);
                 }
                 else if (OperationVoulue.ToLower() == "racine")
                 {
-                    Racine(out decimal reponse);
+                    Racine(out reponse);
                 }
                 else
                 {
@@ -180,6 +179,10 @@ namespace Application_de_test
                     Console.ReadKey();
                     Calculatrice calculatrice = new Calculatrice();
                 }
+                Console.WriteLine("Réponse: " + reponse);
+                Console.WriteLine();
+                Console.WriteLine("Appuyez sur une touche pour fermer la calculatrice...");
+                Console.ReadKey();
             }
 
             //Opérations générales

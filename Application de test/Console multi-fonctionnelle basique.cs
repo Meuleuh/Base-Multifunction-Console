@@ -17,7 +17,7 @@ namespace Application_de_test
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi == "Calculatrice")
                 {
-                    Calculatrice();
+                     Calculatrice calculatrice = new Calculatrice();
                     repeatIt = false;
                 }
                 else
