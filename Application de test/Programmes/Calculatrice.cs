@@ -8,133 +8,18 @@ namespace Application_de_test
 {
     partial class Program
     {
-        /*static void Calculatrice()
-        {
-            void Old()
-            {
-                string StatutEnCours = "Debut";
-                Console.Clear();
-                Console.WriteLine("Voici les opérations pouvant être sélectionnées");
-                FonctionsSelectionnables();
-                Console.Write("Fonction voulue: ");
-                string FonctionSelectionne = Console.ReadLine();
-                if (FonctionSelectionne.ToLower() == "addition" || FonctionSelectionne.ToLower() == "add" || FonctionSelectionne.ToLower() == "plus")
-                {
-                    Addition();
-                }
-                else if (FonctionSelectionne.ToLower() == "soustraction" || FonctionSelectionne.ToLower() == "moins" || FonctionSelectionne.ToLower() == "minus")
-                {
-                    Soustraction();
-                }
-                else
-                {
-                    Console.WriteLine("Cette fonction n'existe pas dans le contexte donné");
-                    Console.WriteLine("Appuyez sur une touche pour recommencer");
-                    Console.ReadKey();
-                    RepriseApresErreur();
-                }
-
-                //Les fonctions essentielles et universelles de la calculatrice
-
-                (decimal, decimal) GetTwoVariable(out decimal valX, out decimal valY)
-                {
-                    Console.Clear();
-                    Console.WriteLine("Quel est la valeur de X ?");
-                    string valXTemp = Console.ReadLine();
-                    try
-                    {
-                        decimal valXError = Convert.ToDecimal(valXTemp);
-                    }
-                    catch
-                    {
-                        ExceptionCaughtInTheVariable();
-                        valXTemp = "0";
-                    }
-                    valX = Convert.ToDecimal(valXTemp);
-                    Console.WriteLine("Quel est la valeur de Y ?");
-                    string valYTemp = Console.ReadLine();
-                    try
-                    {
-                        decimal valYError = Convert.ToDecimal(valYTemp);
-                    }
-                    catch
-                    {
-                        ExceptionCaughtInTheVariable();
-                        valYTemp = "0";
-                    }
-                    valY = Convert.ToDecimal(valYTemp);
-                    return (valX, valY);
-                }
-
-                void ExceptionCaughtInTheVariable()
-                {
-                    Console.WriteLine("La variable ne peut pas être autre chose qu'un nombre");
-                    Console.WriteLine("Appuyez sur une touche pour recommencer la fonction en cours");
-                    Console.ReadKey();
-                    RepriseApresErreur();
-                }
-                //Fonction utile pour éviter les répétition d'un message d'erreur dans le code.
-                //Il va falloir que l'on rajoutes le fait de recommencer la fonction en cours au lieu de recommencer la calculatrice
-
-                void FonctionsSelectionnables()
-                {
-                    Console.WriteLine("- Addition");
-                    Console.WriteLine("- Soustraction");
-                } //Fonction pour écrire toutes les fonctions sélectionnables
-
-                void RepriseApresErreur()
-                {
-                    if (StatutEnCours == "Addition")
-                    {
-                        Addition();
-                    }
-                    else if (StatutEnCours == "Soustraction")
-                    {
-                        Soustraction();
-                    }
-                }
-
-                //Les fonctions de la calculatrice
-
-                void Addition()
-                {
-                    StatutEnCours = "Addition";
-                    GetTwoVariable(out decimal valX, out decimal valY);
-                    Console.Clear();
-                    Console.WriteLine("Valeur de X: " + valX);
-                    Console.WriteLine("Valeur de Y: " + valY);
-                    Console.WriteLine("Somme (X + Y): " + (valX + valY));
-                    Console.WriteLine("Appuyez sur une touche pour fermer la console");
-                    Console.ReadKey();
-                    Environment.Exit(0); //À remplacer lorsque la mémoire sera mise en place ou que l'on voudra que la calculatrice ne se ferme pas après l'exécution
-                }
-
-                void Soustraction()
-                {
-                    StatutEnCours = "Soustraction";
-                    GetTwoVariable(out decimal valX, out decimal valY);
-                    Console.Clear();
-                    Console.WriteLine("Valeur de X: " + valX);
-                    Console.WriteLine("Valeur de Y: " + valY);
-                    Console.WriteLine("Différence (X - Y): " + (valX - valY));
-                    Console.WriteLine("Appuyez sur une touche pour fermer la console");
-                    Console.ReadKey();
-                    Environment.Exit(0); //À remplacer lorsque la mémoire sera mise en place ou que l'on voudra que la calculatrice ne se ferme pas après l'exécution
-                }
-            }
-        } //Version 1.1.1 */
         public class Calculatrice
         {
             public Calculatrice()
             {
                 Console.Clear();
                 Console.WriteLine("Liste des opérations mathématiques");
-                //Console.WriteLine("- Addition");
-                //Console.WriteLine("- Soustraction");
-                //Console.WriteLine("- Multiplication");
-                //Console.WriteLine("- Division");
-                //Console.WriteLine("- Exponentielle");
-                //Console.WriteLine("- Racine");
+                Console.WriteLine("- Addition (X + Y)");
+                Console.WriteLine("- Soustraction (X - Y)");
+                Console.WriteLine("- Multiplication (X × Y)");
+                Console.WriteLine("- Division (X ÷ Y)");
+                Console.WriteLine("- Exponentielle (X ^ Y)");
+                Console.WriteLine("- Racine (X ^ (1/Y))");
                 Console.WriteLine("");
                 Console.Write("Opération voulue: ");
                 string OperationVoulue = Console.ReadLine();
@@ -149,27 +34,27 @@ namespace Application_de_test
                     Calculatrice calculatrice = new Calculatrice();
                 }
                 decimal reponse = 0;
-                if (OperationVoulue.ToLower() == "addition")
+                if (OperationVoulue.ToLower() == "addition" || OperationVoulue.ToLower() == "add" || OperationVoulue.ToLower() == "plus")
                 {
                     Addition(out reponse);
                 }
-                else if (OperationVoulue.ToLower() == "soustraction")
+                else if (OperationVoulue.ToLower() == "soustraction" || OperationVoulue.ToLower() == "minus" || OperationVoulue.ToLower() == "moins" || OperationVoulue.ToLower() == "substract")
                 {
                     Soustraction(out reponse);
                 }
-                else if (OperationVoulue.ToLower() == "multiplication")
+                else if (OperationVoulue.ToLower() == "multiplication" || OperationVoulue.ToLower() == "multiply")
                 {
                     Multiplication(out reponse);
                 }
-                else if (OperationVoulue.ToLower() == "division")
+                else if (OperationVoulue.ToLower() == "division" || OperationVoulue.ToLower() == "divide")
                 {
                     Division(out reponse);
                 }
-                else if (OperationVoulue.ToLower() == "exponentielle")
+                else if (OperationVoulue.ToLower() == "exponentielle" || OperationVoulue.ToLower() == "exponent")
                 {
                     Exponentielle(out reponse);
                 }
-                else if (OperationVoulue.ToLower() == "racine")
+                else if (OperationVoulue.ToLower() == "racine" || OperationVoulue.ToLower() == "root")
                 {
                     Racine(out reponse);
                 }
@@ -184,49 +69,186 @@ namespace Application_de_test
                 Console.WriteLine();
                 Console.WriteLine("Appuyez sur une touche pour fermer la calculatrice...");
                 Console.ReadKey();
+                Environment.Exit(0);
             }
 
             //Opérations générales
 
-            //Ici
+            decimal ObtentionValX(out decimal valX)
+            {
+                bool exception = false;
+                Console.Clear();
+                Console.Write("Entrez la valeur de X: ");
+                string valXTemp = Console.ReadLine();
+                try
+                {
+                    valX = Convert.ToDecimal(valXTemp);
+                }
+                catch(Exception)
+                {
+                    exception = true;
+                    Console.WriteLine("La valeur entrée n'est pas valide...");
+                    Console.WriteLine("Appuyez sur une touche pour re-entrer la valeur de X...");
+                    Console.ReadKey();
+                    ObtentionValX(out valX);
+                }
+                if (exception == false)
+                {
+                    valX = Convert.ToDecimal(valXTemp);
+                    return (valX);
+                }
+                else
+                {
+                    return (0);
+                }
+            }
+            decimal ObtentionValY(out decimal valY)
+            {
+                bool exception = false;
+                Console.Clear();
+                Console.Write("Entrez la valeur de Y: ");
+                string valYTemp = Console.ReadLine();
+                try
+                {
+                    valY = Convert.ToDecimal(valYTemp);
+                }
+                catch (Exception)
+                {
+                    exception = true;
+                    Console.WriteLine("La valeur entrée n'est pas valide...");
+                    Console.WriteLine("Appuyez sur une touche pour re-entrer la valeur de Y...");
+                    Console.ReadKey();
+                    ObtentionValX(out valY);
+                }
+                if (exception == false)
+                {
+                    valY = Convert.ToDecimal(valYTemp);
+                    return (valY);
+                }
+                else
+                {
+                    return (0);
+                }
+            }
+            decimal ObtentionValZ(out decimal valZ)
+            {
+                bool exception = false;
+                Console.Clear();
+                Console.Write("Entrez la valeur de Z: ");
+                string valZTemp = Console.ReadLine();
+                try
+                {
+                    valZ = Convert.ToDecimal(valZTemp);
+                }
+                catch (Exception)
+                {
+                    exception = true;
+                    Console.WriteLine("La valeur entrée n'est pas valide...");
+                    Console.WriteLine("Appuyez sur une touche pour re-entrer la valeur de Z...");
+                    Console.ReadKey();
+                    ObtentionValZ(out valZ);
+                }
+                if (exception == false)
+                {
+                    valZ = Convert.ToDecimal(valZTemp);
+                    return (valZ);
+                }
+                else
+                {
+                    return (0);
+                }
+            }
+            (decimal, decimal, decimal) ObtentionDesVariables(int nbVal, out decimal valX, out decimal valY, out decimal valZ)
+            {
+                valX = 0;
+                valY = 0;
+                valZ = 0;
+                if (nbVal == 1)
+                {
+                    ObtentionValX(out valX);
+                }
+                else if (nbVal == 2)
+                {
+                    ObtentionValX(out valX);
+                    ObtentionValY(out valY);
+                }
+                else if (nbVal == 3)
+                {
+                    ObtentionValX(out valX);
+                    ObtentionValY(out valY);
+                    ObtentionValZ(out valZ);
+                }
+                else
+                {
+                    Console.WriteLine("Une erreur s'est produite dans l'exécution de la fonction, veuillez le reporter sur le GitHub où vous avez trouver cette console pour aider le développeur à régler tout bug possible");
+                    Console.WriteLine("Après avoir rapporté cette erreur, appuyez sur une touche pour fermer la console...");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                return (valX, valY, valZ);
+            }
 
             //Opérations mathématiques
 
             decimal Addition(out decimal reponse)
             {
-                reponse = 0;
+                ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
+                reponse = (valX + valY);
+                Console.Clear();
+                Console.WriteLine(valX + " + " + valY);
+                Console.WriteLine();
                 return reponse;
             }
 
             decimal Soustraction(out decimal reponse)
             {
-                reponse = 0;
+                ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
+                reponse = (valX - valY);
+                Console.Clear();
+                Console.WriteLine(valX + " - " + valY);
+                Console.WriteLine();
                 return reponse;
             }
 
             decimal Multiplication(out decimal reponse)
             {
-                reponse = 0;
+                ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
+                reponse = (valX * valY);
+                Console.Clear();
+                Console.WriteLine(valX + " × " + valY);
+                Console.WriteLine();
                 return reponse;
             }
 
             decimal Division(out decimal reponse)
             {
-                reponse = 0;
+                ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
+                reponse = (valX / valY);
+                Console.Clear();
+                Console.WriteLine(valX + " ÷ " + valY);
+                Console.WriteLine();
                 return reponse;
             }
 
             decimal Exponentielle(out decimal reponse)
             {
-                reponse = 0;
+                ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
+                reponse = Convert.ToDecimal(Math.Pow(Convert.ToDouble(valX), Convert.ToDouble(valY)));
+                Console.Clear();
+                Console.WriteLine(Convert.ToDouble(valX) + " ^ " + Convert.ToDouble(valY));
+                Console.WriteLine();
                 return reponse;
             }
 
             decimal Racine(out decimal reponse)
             {
-                reponse = 0;
+                ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
+                reponse = Convert.ToDecimal(Math.Pow(Convert.ToDouble(valX), Convert.ToDouble(1/valY)));
+                Console.Clear();
+                Console.WriteLine(Convert.ToDouble(valX) + " ^ 1/" + Convert.ToDouble(valY));
+                Console.WriteLine();
                 return reponse;
             }
-        }
+        } //Version 2.0.0
     }
 }

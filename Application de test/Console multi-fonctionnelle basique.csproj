@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9D1534BA-1AC6-45A1-8B4A-878C4F1AD15D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Application_de_test</RootNamespace>
-    <AssemblyName>Application de test</AssemblyName>
+    <RootNamespace>Console_multi_fonctionnelle_basique</RootNamespace>
+    <AssemblyName>Console multi-fonctionnelle basique</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

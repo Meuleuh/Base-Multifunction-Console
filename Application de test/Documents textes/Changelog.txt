@@ -6,52 +6,63 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               1.1.1 ┃
-┃   - Calculatrice                          ┃               1.1.1 ┃
+┃   - Console multi-fonctionnelle basique   ┃               1.2.0 ┃
+┃   - Calculatrice                          ┃               2.0.0 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
-[1.X]
-┣━━━[1.0.X]
-┃   ┣━━━━━[1.0.0]
-┃   ┃     La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
-┃   ┃     Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
-┃   ┃     en charge pour le moment.
-┃   ┣━━━━━[1.0.1]
-┃   ┃     {Voir le changelog de la calculatrice version 1.0.1}
-┃   ┗━━━━━[1.0.2]
+[1.X.X]
+┣━━━━━[1.0.X]
+┃     ┣━━━━━[1.0.0]
+┃     ┃     La calculatrice peut être demandée et l'exception d'un programme invalide est en place et fonctionne.
+┃     ┃     Pour appeler la calculatrice, il faut écrire "Calculatrice" sans faute, les fautes ne sont pas encore prises
+┃     ┃     en charge pour le moment.
+┃     ┣━━━━━[1.0.1]
+┃     ┃     {Voir le changelog de la calculatrice version 1.0.1}
+┃     ┗━━━━━[1.0.2]
 ┃         {Voir le changelog de la calculatrice version 1.0.2}
-┗━━━[1.1.X]
-    ┣━━━━━[1.1.0]
-    ┃     {Voir le changelog de la calculatrice version 1.1.0}
-    ┗━━━━━[1.1.1]
-          {Voir le changelog de la calculatrice version 1.1.1}
+┣━━━━━[1.1.X]
+┃     ┣━━━━━[1.1.0]
+┃     ┃     {Voir le changelog de la calculatrice version 1.1.0}
+┃     ┗━━━━━[1.1.1]
+┃           {Voir le changelog de la calculatrice version 1.1.1}
+┗━━━━━[1.2.X]
+      ┗━━━━━[1.2.0]
+            {Voir le changelog de la calculatrice version 2.0.0}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 {Calculatrice}
-[1.X]
-┣━━━[1.0.X]
-┃   ┣━━━━━[1.0.0]
-┃   ┃     La calculatrice peut être utilisé pour faire des additions entre deux constantes. Cependant, si on rentre une
-┃   ┃     valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
-┃   ┃     directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
-┃   ┃     de redémarrer à partir du début.
-┃   ┣━━━━━[1.0.1]
-┃   ┃     Ajout de texte lors de la sélection de la fonction à exécuter
-┃   ┗━━━━━[1.0.2]
+[1.X.X]
+┣━━━━━[1.0.X]
+┃     ┣━━━━━[1.0.0]
+┃     ┃     La calculatrice peut être utilisé pour faire des additions entre deux constantes. Cependant, si on rentre une
+┃     ┃     valeur non numérique, la calculatrice redémarre à partir de 0, il va falloir ajouter le fait qu'elle redémarre
+┃     ┃     directement dans la fonction demandée et à l'entrée de la variable en erreur directement au lieu
+┃     ┃     de redémarrer à partir du début.
+┃     ┣━━━━━[1.0.1]
+┃     ┃     Ajout de texte lors de la sélection de la fonction à exécuter
+┃     ┗━━━━━[1.0.2]
 ┃         Ajout de la tolérence des minuscules et majuscule lors de l'appel de la fonction "addition"
-┗━━━[1.1.X]
-    ┣━━━━━[1.1.0]
-    ┃     Ajout de la fonction soustraction qui peut, comme son nom l'indique, faire des soustractions. Elle fonctionne
-	┃     identiquement à l'addition sauf qu'elle soustrait la valeur de Y de celle de X (X - Y). On peut également
-	┃     appeler la fonction addition en écrivant "Plus", avec ou sans la majuscule.
-    ┗━━━━━[1.1.1]
-          Ajout d'une fonction pour reprendre l'exécution de la calculatrice au début de la fonction appelée au lieu de
-		  juste redémarrer la calculatrice à partir de 0. Par exemple: Si on est en train d'utiliser la fonction
-		  soustraction et que l'on entre "e" pour la valeur Y, le message d'erreur va s'afficher et le programme va
-		  retourner au début de la fonction soustraction au lieu de retourner à l'écran de sélection de fonctions.
-		  Pour ce faire, un Environment.Exit(0) a été utilisé. Il va falloir qu'il soit remplacé lors de 
-		  l'implémentation de la mémoire dans le fonctionnement de la calculatrice.
+┗━━━━━[1.1.X]
+      ┣━━━━━[1.1.0]
+      ┃     Ajout de la fonction soustraction qui peut, comme son nom l'indique, faire des soustractions. Elle fonctionne
+	  ┃     identiquement à l'addition sauf qu'elle soustrait la valeur de Y de celle de X (X - Y). On peut également
+      ┃     appeler la fonction addition en écrivant "Plus", avec ou sans la majuscule.
+      ┗━━━━━[1.1.1]
+            Ajout d'une fonction pour reprendre l'exécution de la calculatrice au début de la fonction appelée au lieu de
+		    juste redémarrer la calculatrice à partir de 0. Par exemple: Si on est en train d'utiliser la fonction
+		    soustraction et que l'on entre "e" pour la valeur Y, le message d'erreur va s'afficher et le programme va
+		    retourner au début de la fonction soustraction au lieu de retourner à l'écran de sélection de fonctions.
+		    Pour ce faire, un Environment.Exit(0) a été utilisé. Il va falloir qu'il soit remplacé lors de 
+		    l'implémentation de la mémoire dans le fonctionnement de la calculatrice.
+[2.X.X]
+┗━━━━━[2.0.X]
+      ┗━━━━━[2.0.0]
+            Refonte entière du code de la calculatrice. Prise en charge des additions, soustractions, divisions,
+			multiplications, des opérations exponentielles et les racines dès le début. La mémoire arrive bientôt,
+			tout comme le fait de poursuivre les opérations après en avoir terminé une! Merci de votre attente et
+			si vous voulez voir un accéléré de cette refonte, allez voir le lien suivant:
+			[Insérer le lien ici]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
