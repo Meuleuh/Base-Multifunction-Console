@@ -1,0 +1,1 @@
+Convertir les "." en "," lors de l'entrée de nombres à virgules pour éviter les erreurs!
