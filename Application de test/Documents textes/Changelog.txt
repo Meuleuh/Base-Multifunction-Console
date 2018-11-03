@@ -63,6 +63,6 @@ d'une autre composante car seule cette dernière a été affectée.
 			multiplications, des opérations exponentielles et les racines dès le début. La mémoire arrive bientôt,
 			tout comme le fait de poursuivre les opérations après en avoir terminé une! Merci de votre attente et
 			si vous voulez voir un accéléré de cette refonte, allez voir le lien suivant:
-			[Insérer le lien ici]
+			https://youtu.be/xf7Jh2nG3fw
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
