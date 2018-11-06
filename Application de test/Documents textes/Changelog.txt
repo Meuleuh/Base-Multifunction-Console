@@ -6,7 +6,7 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               1.2.0 ┃
+┃   - Console multi-fonctionnelle basique   ┃               2.0.0 ┃
 ┃   - Calculatrice                          ┃               2.0.0 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
@@ -29,6 +29,10 @@ d'une autre composante car seule cette dernière a été affectée.
 ┗━━━━━[1.2.X]
       ┗━━━━━[1.2.0]
             {Voir le changelog de la calculatrice version 2.0.0}
+[2.X.X]
+┗━━━━━[2.0.X]
+      ┗━━━━━[2.0.0]
+            Migration de la version du .NET Framework 4.7.1 vers la version 4.7.2
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

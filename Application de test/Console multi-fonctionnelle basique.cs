@@ -14,6 +14,7 @@ namespace Application_de_test
                 Console.WriteLine("Entrez le programme voulu");
                 Console.WriteLine("Liste des programmes (aucune erreur de frappe est accepté, incluant l'absence d'une majuscule");
                 Console.WriteLine("- Calculatrice");
+                Console.WriteLine();
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi == "Calculatrice")
                 {
@@ -27,6 +28,6 @@ namespace Application_de_test
                     Console.ReadKey();
                 }
             }
-        } //Version 1.2.0
+        } //Version 2.0.0
     }
 }
