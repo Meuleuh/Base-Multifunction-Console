@@ -3,8 +3,5 @@ Ce programme est une console multi-fonction avec sélection de fonction lors de 
 
 [Notes]
 Le but de cette console est de proposer un maximum de fonctions diverses et variées, mais surtout de me pratiquer
-à programmer en C#. La version 1.X finale contiendra une calculatrice basique qui peut faire des additions,
-soustractions, divisions, multiplications, utiliser des exposants et des racines. La version 1.0.0 sera prête
-lorsque les additions seront prises en charge. La version finale de la calculatrice basique prendra aussi en charge
-la mémoire de valeurs pour utilisation future. Lorsque la calculatrice aura atteint un niveau plus avancé, elle
-passera en 2.0.0.
+à programmer en C#. Les composantes actuellement implémentées sont:
+- Calculatrice

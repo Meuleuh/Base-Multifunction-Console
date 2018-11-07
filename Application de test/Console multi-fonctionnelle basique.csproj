@@ -71,7 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Documents textes\Calculatrice\Addition.txt" />
+    <Content Include="Documents textes\Calculatrice\Division.txt" />
+    <Content Include="Documents textes\Calculatrice\Exponentielle.txt" />
+    <Content Include="Documents textes\Calculatrice\Racine.txt" />
     <Content Include="Documents textes\Calculatrice\Soustraction.txt" />
+    <Content Include="Documents textes\Calculatrice\Multiplication.txt" />
     <Content Include="Documents textes\Changelog.txt" />
     <Content Include="Documents textes\Infos.txt" />
   </ItemGroup>
