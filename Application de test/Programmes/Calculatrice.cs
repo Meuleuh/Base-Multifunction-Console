@@ -75,7 +75,7 @@ namespace Application_de_test
             }
 
             //Opérations générales
-
+            //Je n'ai pas espacé ces trois fonctions car elles font toutes la même chose, juste que les différencier permet une reprise du code plus facile pour moi.
             decimal ObtentionValX(out decimal valX)
             {
                 bool exception = false;
@@ -160,6 +160,7 @@ namespace Application_de_test
                     return (0);
                 }
             }
+
             (decimal, decimal, decimal) ObtentionDesVariables(int nbVal, out decimal valX, out decimal valY, out decimal valZ)
             {
                 valX = 0;
