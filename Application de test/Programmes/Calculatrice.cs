@@ -12,6 +12,7 @@ namespace Application_de_test
         {
             public Calculatrice()
             {
+                Console.Title = "Calculatrice";
                 Console.Clear();
                 Console.WriteLine("Liste des opérations mathématiques");
                 Console.WriteLine("- Addition (X + Y)");
@@ -65,6 +66,7 @@ namespace Application_de_test
                     Console.ReadKey();
                     Calculatrice calculatrice = new Calculatrice();
                 }
+                Console.Title = "Calculatrice";
                 Console.WriteLine("Réponse: " + reponse);
                 Console.WriteLine();
                 Console.WriteLine("Appuyez sur une touche pour fermer la calculatrice...");
@@ -192,6 +194,7 @@ namespace Application_de_test
 
             decimal Addition(out decimal reponse)
             {
+                Console.Title = "Calcultrice.Addition";
                 ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
                 reponse = (valX + valY);
                 Console.Clear();
@@ -202,6 +205,7 @@ namespace Application_de_test
 
             decimal Soustraction(out decimal reponse)
             {
+                Console.Title = "Calcultrice.Soustraction";
                 ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
                 reponse = (valX - valY);
                 Console.Clear();
@@ -212,6 +216,7 @@ namespace Application_de_test
 
             decimal Multiplication(out decimal reponse)
             {
+                Console.Title = "Calcultrice.Multiplication";
                 ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
                 reponse = (valX * valY);
                 Console.Clear();
@@ -222,6 +227,7 @@ namespace Application_de_test
 
             decimal Division(out decimal reponse)
             {
+                Console.Title = "Calcultrice.Division";
                 ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
                 reponse = (valX / valY);
                 Console.Clear();
@@ -232,6 +238,7 @@ namespace Application_de_test
 
             decimal Exponentielle(out decimal reponse)
             {
+                Console.Title = "Calcultrice.Exponentielle";
                 ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
                 reponse = Convert.ToDecimal(Math.Pow(Convert.ToDouble(valX), Convert.ToDouble(valY)));
                 Console.Clear();
@@ -242,6 +249,7 @@ namespace Application_de_test
 
             decimal Racine(out decimal reponse)
             {
+                Console.Title = "Calcultrice.Racine";
                 ObtentionDesVariables(2, out decimal valX, out decimal valY, out _);
                 reponse = Convert.ToDecimal(Math.Pow(Convert.ToDouble(valX), Convert.ToDouble(1/valY)));
                 Console.Clear();
@@ -249,6 +257,6 @@ namespace Application_de_test
                 Console.WriteLine();
                 return reponse;
             }
-        } //Version 2.0.0
+        } //Version 2.0.1
     }
 }

@@ -6,6 +6,7 @@ namespace Application_de_test
     {
         static void Main(string[] args)
         {
+            Console.Title = "Console multi-fonctionnelle basique";
             bool repeatIt = true;
 
             while (repeatIt == true)
@@ -28,6 +29,6 @@ namespace Application_de_test
                     Console.ReadKey();
                 }
             }
-        } //Version 2.0.0
+        } //Version 2.0.1
     }
 }

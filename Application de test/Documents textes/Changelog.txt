@@ -6,8 +6,8 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               2.0.0 ┃
-┃   - Calculatrice                          ┃               2.0.0 ┃
+┃   - Console multi-fonctionnelle basique   ┃               2.0.1 ┃
+┃   - Calculatrice                          ┃               2.0.1 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
@@ -31,10 +31,12 @@ d'une autre composante car seule cette dernière a été affectée.
             {Voir le changelog de la calculatrice version 2.0.0}
 [2.X.X]
 ┗━━━━━[2.0.X]
-      ┗━━━━━[2.0.0]
-            Migration de la version du .NET Framework 4.7.1 vers la version 4.7.2
+      ┣━━━━━[2.0.0]
+      ┃     Migration de la version du .NET Framework 4.7.1 vers la version 4.7.2
+      ┗━━━━━[2.0.1]
+	        Il a y a désormais le titre de la console qui change au cours de son opération, à vous d'y porter attention
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 {Calculatrice}
 [1.X.X]
@@ -62,11 +64,14 @@ d'une autre composante car seule cette dernière a été affectée.
 		    l'implémentation de la mémoire dans le fonctionnement de la calculatrice.
 [2.X.X]
 ┗━━━━━[2.0.X]
-      ┗━━━━━[2.0.0]
-            Refonte entière du code de la calculatrice. Prise en charge des additions, soustractions, divisions,
-			multiplications, des opérations exponentielles et les racines dès le début. La mémoire arrive bientôt,
-			tout comme le fait de poursuivre les opérations après en avoir terminé une! Merci de votre attente et
-			si vous voulez voir un accéléré de cette refonte, allez voir le lien suivant:
-			https://youtu.be/xf7Jh2nG3fw
+      ┣━━━━━[2.0.0]
+      ┃     Refonte entière du code de la calculatrice. Prise en charge des additions, soustractions, divisions,
+	  ┃     multiplications, des opérations exponentielles et les racines dès le début. La mémoire arrive bientôt,
+	  ┃ 	tout comme le fait de poursuivre les opérations après en avoir terminé une! Merci de votre attente et
+	  ┃ 	si vous voulez voir un accéléré de cette refonte, allez voir le lien suivant:
+	  ┃ 	https://youtu.be/xf7Jh2nG3fw
+      ┗━━━━━[2.0.1]
+			{Voir changelog de la console multi-fonctionnelle basique version 2.0.1 puisque les modifications sont les
+			mêmes}
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
