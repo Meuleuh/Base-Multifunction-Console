@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application_de_test
+namespace Console_multi_fonctionnelle_basique
 {
     partial class Program
     {

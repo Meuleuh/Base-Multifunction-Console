@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Console multi-fonctionnelle basique.cs" />
     <Compile Include="Programmes\Calculatrice.cs" />
+    <Compile Include="Programmes\Sudoku Solver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Application_de_test
+namespace Console_multi_fonctionnelle_basique
 {
     partial class Program
     {
@@ -15,11 +15,17 @@ namespace Application_de_test
                 Console.WriteLine("Entrez le programme voulu");
                 Console.WriteLine("Liste des programmes (aucune erreur de frappe est accepté, incluant l'absence d'une majuscule");
                 Console.WriteLine("- Calculatrice");
+                Console.WriteLine("- Sudoku Solver");
                 Console.WriteLine();
                 string PrgChoisi = Console.ReadLine();
-                if (PrgChoisi == "Calculatrice")
+                if (PrgChoisi.ToLower() == "calculatrice")
                 {
-                     Calculatrice calculatrice = new Calculatrice();
+                    Calculatrice calculatrice = new Calculatrice();
+                    repeatIt = false;
+                }
+                else if (PrgChoisi.ToLower() == "sudoku solver")
+                {
+                    SudokuSolver sudokuSolver = new SudokuSolver();
                     repeatIt = false;
                 }
                 else
