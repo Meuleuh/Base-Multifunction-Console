@@ -63,8 +63,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Console multi-fonctionnelle basique.cs" />
-    <Compile Include="Programmes\Calculatrice.cs" />
-    <Compile Include="Programmes\Sudoku Solver.cs" />
+    <Compile Include="Composantes\Calculatrice\Calculatrice.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations générales\Obtention de la valeur de Y.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations générales\Obtention de la valeur de Z.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations générales\Obtention de la valeur de X.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations générales\Obtention des variables.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations mathématiques\Exponentielle.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations mathématiques\Racine.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations mathématiques\Addition.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations mathématiques\Division.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations mathématiques\Multiplication.cs" />
+    <Compile Include="Composantes\Calculatrice\Opérations mathématiques\Soustraction.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\GridValue %28Class%29.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\Sudoku Grid Creator.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\Sudoku Display.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Sudoku Solver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,5 +105,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
