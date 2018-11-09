@@ -2,10 +2,11 @@
 
 namespace Console_multi_fonctionnelle_basique
 {
-    partial class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.Title = "Console multi-fonctionnelle basique";
             bool repeatIt = true;
 
