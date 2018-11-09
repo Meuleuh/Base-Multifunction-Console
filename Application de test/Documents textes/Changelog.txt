@@ -6,8 +6,8 @@ d'une autre composante car seule cette dernière a été affectée.
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃               2.0.1 ┃
-┃   - Calculatrice                          ┃               2.0.1 ┃
+┃   - Console multi-fonctionnelle basique   ┃             2.0.1:1 ┃
+┃   - Calculatrice                          ┃             2.0.1:1 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
@@ -20,7 +20,7 @@ d'une autre composante car seule cette dernière a été affectée.
 ┃     ┣━━━━━[1.0.1]
 ┃     ┃     {Voir le changelog de la calculatrice version 1.0.1}
 ┃     ┗━━━━━[1.0.2]
-┃         {Voir le changelog de la calculatrice version 1.0.2}
+┃           {Voir le changelog de la calculatrice version 1.0.2}
 ┣━━━━━[1.1.X]
 ┃     ┣━━━━━[1.1.0]
 ┃     ┃     {Voir le changelog de la calculatrice version 1.1.0}
@@ -33,8 +33,11 @@ d'une autre composante car seule cette dernière a été affectée.
 ┗━━━━━[2.0.X]
       ┣━━━━━[2.0.0]
       ┃     Migration de la version du .NET Framework 4.7.1 vers la version 4.7.2
-      ┗━━━━━[2.0.1]
-	        Il a y a désormais le titre de la console qui change au cours de son opération, à vous d'y porter attention
+      ┣━━━━━[2.0.1]
+	  ┃     Il a y a désormais le titre de la console qui change au cours de son opération, à vous d'y porter attention
+      ┗━━━━━[2.0.1:1]
+	        Division des codes en plusieurs fichiers (un pour chaque fonction). Du coup, il sera plus facile pour moi de
+			me retrouver dans mon code
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -70,8 +73,11 @@ d'une autre composante car seule cette dernière a été affectée.
 	  ┃ 	tout comme le fait de poursuivre les opérations après en avoir terminé une! Merci de votre attente et
 	  ┃ 	si vous voulez voir un accéléré de cette refonte, allez voir le lien suivant:
 	  ┃ 	https://youtu.be/xf7Jh2nG3fw
-      ┗━━━━━[2.0.1]
-			{Voir changelog de la console multi-fonctionnelle basique version 2.0.1 puisque les modifications sont les
+      ┣━━━━━[2.0.1]
+	  ┃ 	{Voir changelog de la console multi-fonctionnelle basique version 2.0.1 puisque les modifications sont les
+	  ┃ 	mêmes}
+      ┗━━━━━[2.0.1:1]
+	        {Voir changelog de la console multi-fonctionnelle basique version 2.0.2 puisque les modifications sont les
 			mêmes}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

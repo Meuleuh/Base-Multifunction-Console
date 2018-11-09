@@ -1,40 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Console_multi_fonctionnelle_basique
 {
-    public class SudokuSolver
+    public partial class SudokuSolver
     {
-        //Code d'initialisation
-        public SudokuSolver()
-        {
-            Console.Clear();
-            SudokuGridCreator(out GridValue[,] SudokuGrid);
-            SudokuDisplay(SudokuGrid);
-            Console.ReadKey();
-        }
-
-        //Stocker toutes les variables nécessaires à chaque case
-        private class GridValue
-        {
-            /*
-            public bool CanBe1 { get; set; } = false;
-            public bool CanBe2 { get; set; } = false;
-            public bool CanBe3 { get; set; } = false;
-            public bool CanBe4 { get; set; } = false;
-            public bool CanBe5 { get; set; } = false;
-            public bool CanBe6 { get; set; } = false;
-            public bool CanBe7 { get; set; } = false;
-            public bool CanBe8 { get; set; } = false;
-            public bool CanBe9 { get; set; } = false;
-            */
-            public List<int> PossibleValues = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            public bool AlreadySolved { get; set; } = false;
-            public int Value { get; set; } = 0;
-        }
-
-        //Afficher la grille
-
         private void SudokuDisplay(GridValue[,] Sudoku)
         {
             Console.WriteLine("Tous les 0 représentent des valeurs non assignées");
@@ -58,25 +27,5 @@ namespace Console_multi_fonctionnelle_basique
             Console.WriteLine("┃ " + Sudoku[0, 8].Value + " │ " + Sudoku[1, 8].Value + " │ " + Sudoku[2, 8].Value + " ┃ " + Sudoku[3, 8].Value + " │ " + Sudoku[4, 8].Value + " │ " + Sudoku[5, 8].Value + " ┃ " + Sudoku[6, 8].Value + " │ " + Sudoku[7, 8].Value + " │ " + Sudoku[8, 8].Value + " ┃");
             Console.WriteLine("┗━━━┷━━━┷━━━┻━━━┷━━━┷━━━┻━━━┷━━━┷━━━┛");
         }
-
-        //Demander la valeur des cases déjà assignées
-        //Vérifier si la case peut avoir tel ou tel nombre et si non, utiliser un .Remove()
-        //Choisir le nombre le plus approprié pour chaque case
-        //Terminer le programme après l'appui de l'usager
-
-        //Création de toutes les objets pour que la grille fonctionne
-        private GridValue[,] SudokuGridCreator(out GridValue[,] SudokuGrid)
-        {
-            SudokuGrid = new GridValue[9, 9];
-            for (int i = 0; i < 9; i++)
-            {
-                for (int j = 0; j < 9; j++)
-                {
-                    SudokuGrid[i, j] = new GridValue();
-                }
-            }
-
-            return SudokuGrid;
-        }
-    }
+    } //Version Pre-Release
 }
