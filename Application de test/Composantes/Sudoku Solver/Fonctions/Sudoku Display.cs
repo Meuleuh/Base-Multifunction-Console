@@ -27,5 +27,5 @@ namespace Console_multi_fonctionnelle_basique
             Console.WriteLine("┃ " + Sudoku[0, 8].Value + " │ " + Sudoku[1, 8].Value + " │ " + Sudoku[2, 8].Value + " ┃ " + Sudoku[3, 8].Value + " │ " + Sudoku[4, 8].Value + " │ " + Sudoku[5, 8].Value + " ┃ " + Sudoku[6, 8].Value + " │ " + Sudoku[7, 8].Value + " │ " + Sudoku[8, 8].Value + " ┃");
             Console.WriteLine("┗━━━┷━━━┷━━━┻━━━┷━━━┷━━━┻━━━┷━━━┷━━━┛");
         }
-    } //Version Pre-Release
+    }
 }
