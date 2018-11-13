@@ -27,17 +27,41 @@ namespace Console_multi_fonctionnelle_basique
                     for (int j = 0; j < 9; j++)
                     {
                         //Vérifier si la case a déjà une valeur. Si oui, on skip la valeur pour optimiser le calcul
-                        if (SudokuGrid[i,j].AlreadySolved == false)
+                        if (SudokuGrid[i, j].AlreadySolved == false)
                         {
                             //Vérifier si la case peut avoir tel ou tel nombre et si non, utiliser un .Remove()
                             SudokuGrid = RowDetection(SudokuGrid, i, j);
                             SudokuGrid = ColumnDetection(SudokuGrid, i, j);
                             SudokuGrid = HouseDetection(SudokuGrid, i, j);
+                            SudokuGrid = ObviousSolving(SudokuGrid, i, j);
+                            if (SudokuGrid[i, j].AlreadySolved == true)
+                            {
+                                Console.Clear();
+                                SudokuDisplay(SudokuGrid);
+                            }
                         }
                     }
                 }
+                bool tempSolved = true;
+                for (int tempI = 0; tempI < 9; tempI++)
+                {
+                    for (int tempJ = 0; tempJ < 9; tempJ++)
+                    {
+                        if (SudokuGrid [tempI,tempJ].AlreadySolved == false)
+                        {
+                            tempSolved = false;
+                            break;
+                        }
+                    }
+                    if (tempSolved == false)
+                    {
+                        break;
+                    }
+                }
+                solved = tempSolved;
                 Console.ReadKey();
                 Environment.Exit(0);
+                
             }
             while (solved == false);
             //Choisir le nombre le plus approprié pour chaque case si possible (Si une seule valeur est possible, ou si c'est la seule case pouvant contenir une telle valeur dans la rangée / colonne / carré (3x3)
