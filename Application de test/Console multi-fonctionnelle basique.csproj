@@ -62,9 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\Column Solving.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\House Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Obvious Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Column Detection.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\House detection.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\Row Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Row detection.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Sudoku Querry.cs" />
     <Compile Include="Console multi-fonctionnelle basique.cs" />

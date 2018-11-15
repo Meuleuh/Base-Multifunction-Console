@@ -12,6 +12,7 @@ namespace Console_multi_fonctionnelle_basique
             SudokuGridCreator(out GridValue[,] SudokuGrid);
             bool repeatQuerry = true;
             bool solved = false;
+            int iteration = 0;
             //Demander la valeur des cases déjà assignées
             do
             {
@@ -42,6 +43,37 @@ namespace Console_multi_fonctionnelle_basique
                         }
                     }
                 }
+                bool breakThrough = false;
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+                        if (SudokuGrid[i, j].AlreadySolved == false)
+                        {
+                            SudokuGrid = RowSolving(SudokuGrid, i, j);
+                        }
+                        if (SudokuGrid[i, j].AlreadySolved == false)
+                        {
+                            SudokuGrid = ColumnSolving(SudokuGrid, i, j);
+                        }
+                        if (SudokuGrid[i, j].AlreadySolved == false)
+                        {
+                            SudokuGrid = HouseSolving(SudokuGrid, i, j);
+                        }
+                        if (SudokuGrid[i,j].AlreadySolved == true)
+                        {
+                            breakThrough = true;
+                        }
+                        if (breakThrough == true)
+                        {
+                            break;
+                        }
+                    }
+                    if (breakThrough == true)
+                    {
+                        break;
+                    }
+                }
                 bool tempSolved = true;
                 for (int tempI = 0; tempI < 9; tempI++)
                 {
@@ -59,9 +91,12 @@ namespace Console_multi_fonctionnelle_basique
                     }
                 }
                 solved = tempSolved;
-                Console.ReadKey();
-                Environment.Exit(0);
-                
+                if (iteration > 1000)
+                {
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                iteration++;
             }
             while (solved == false);
             //Choisir le nombre le plus approprié pour chaque case si possible (Si une seule valeur est possible, ou si c'est la seule case pouvant contenir une telle valeur dans la rangée / colonne / carré (3x3)

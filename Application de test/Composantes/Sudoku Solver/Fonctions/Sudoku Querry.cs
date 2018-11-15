@@ -44,7 +44,7 @@ namespace Console_multi_fonctionnelle_basique
                     //Exception si la valeur en X donne une erreur
                     try
                     {
-                        int xnum = Convert.ToInt16(Char.GetNumericValue(x));
+                        int xnum = Convert.ToInt16(char.GetNumericValue(x));
                     }
                     catch
                     {
@@ -57,7 +57,7 @@ namespace Console_multi_fonctionnelle_basique
                     //Exception si la valeur en Y donne une erreur
                     try
                     {
-                        int ynum = Convert.ToInt16(Char.GetNumericValue(y));
+                        int ynum = Convert.ToInt16(char.GetNumericValue(y));
                     }
                     catch
                     {
@@ -70,7 +70,7 @@ namespace Console_multi_fonctionnelle_basique
                     //Exception si la valeur en Z donne une erreur
                     try
                     {
-                        int znum = Convert.ToInt16(Char.GetNumericValue(z));
+                        int znum = Convert.ToInt16(char.GetNumericValue(z));
                     }
                     catch
                     {
@@ -83,9 +83,9 @@ namespace Console_multi_fonctionnelle_basique
                     //Petite condition qui peut sembler inutile mais qui m'a déjà sauvé la mise dans le passé
                     if (exception == false)
                     {
-                        int xnum = Convert.ToInt16(Char.GetNumericValue(x)) - 1; //Il faut réduire de 1 car l'utilisateur sait pas que la case 1:1 équivaut à la case 0:0 dans le code
-                        int ynum = Convert.ToInt16(Char.GetNumericValue(y)) - 1; //Même chose ici
-                        int znum = Convert.ToInt16(Char.GetNumericValue(z));
+                        int xnum = Convert.ToInt16(char.GetNumericValue(x)) - 1; //Il faut réduire de 1 car l'utilisateur sait pas que la case 1:1 équivaut à la case 0:0 dans le code
+                        int ynum = Convert.ToInt16(char.GetNumericValue(y)) - 1; //Même chose ici
+                        int znum = Convert.ToInt16(char.GetNumericValue(z));
                         SudokuGrid[xnum, ynum].Value = znum;
                         SudokuGrid[xnum, ynum].AlreadySolved = true;
                         for (int i = 1; i < 10; i++)
