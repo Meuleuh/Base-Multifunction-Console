@@ -69,6 +69,7 @@
     <Compile Include="Composantes\Sudoku Solver\Fonctions\House detection.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Row Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Row detection.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\Uneasy Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Sudoku Querry.cs" />
     <Compile Include="Console multi-fonctionnelle basique.cs" />
     <Compile Include="Composantes\Calculatrice\Calculatrice.cs" />
