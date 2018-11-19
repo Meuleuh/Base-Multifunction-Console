@@ -21,6 +21,7 @@ namespace Console_multi_fonctionnelle_basique
             while (repeatQuerry == true);
             SudokuDisplay(SudokuGrid);
             //Résolution du sudoku
+            GridValue[,] tempSudokuGrid = new GridValue[9, 9];
             do
             {
                 for (int i = 0; i < 9; i++)
@@ -91,6 +92,15 @@ namespace Console_multi_fonctionnelle_basique
                     }
                 }
                 solved = tempSolved;
+                if (tempSudokuGrid == SudokuGrid)
+                {
+                    UneasySolving(SudokuGrid);
+                }
+                else
+                {
+                    tempSudokuGrid = SudokuGrid;
+                }
+
                 if (iteration > 1000)
                 {
                     Console.ReadKey();
