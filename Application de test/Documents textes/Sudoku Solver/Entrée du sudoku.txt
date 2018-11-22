@@ -1,4 +1,3 @@
 ﻿[À remplir...]
 
-(Note: Il sera inscrit ici comment cette fonction s'exécute, et non pas comment on entre
-le sudoku dans la console...)
+(Note: Il sera inscrit ici comment cette fonction s'exécute, et non pas comment on entre le sudoku dans la console...)

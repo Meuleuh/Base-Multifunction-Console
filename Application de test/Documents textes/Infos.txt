@@ -2,6 +2,6 @@
 Ce programme est une console multi-fonction avec sélection de fonction lors de l'ouverture
 
 [Notes]
-Le but de cette console est de proposer un maximum de fonctions diverses et variées, mais surtout de me pratiquer
-à programmer en C#. Les composantes actuellement implémentées sont:
+Le but de cette console est de proposer un maximum de fonctions diverses et variées, mais surtout de me pratiquer à programmer en C#. Les composantes actuellement implémentées sont:
 - Calculatrice
+- Sudoku Solver

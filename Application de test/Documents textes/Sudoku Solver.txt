@@ -1,6 +1,29 @@
-﻿[À remplir]
+﻿[Sudoku Solver]
+Peut être demandé lors de l'ouverture de la console en écrivant "sudoku solver", avec ou sans majuscule. Aucune autre saisie n'est tolérée.
 
-(Note: Inclure le fait de dire que les documents liés à cette composante n'explique pas comment
-utiliser le sudoku mais plutôt comment le programme fonctionne en lui-même... Son fonctionnement
-sera inscrit ici à la place pour que le monde puisse savoir comment l'utiliser sans devoir entrer
-dans les détails.)
+[Résumé]
+Il s'agit d'un solutionneur de sudoku. Il suffit juste d'entrer tous les chiffres qui sont déjà disposés dans la grille et le programme résoudra le sudoku.
+
+[Fonctionnement]
+On demande à l'utilisateur d'écrire des valeurs suivant le schéma [x,y,v] où
+- x = La colonne dans laquelle la case se situe (on entre une ordonée sur le plan horizontal du coup)
+- y = La rangée dans laquelle la case se situe (on entre une ordonée sur le plan vertical du coup)
+- v = La valeur de la case correspondant aux coordonnées entrées en x et en y
+Après que l'utilisateur ait terminé d'entrer cette valeur, on lui redemande d'entrer une valeur
+Pour clore cette boucle lorsque la grille est rentrée dans le programme, l'utilisateur doit écrire "terminé" au lieu d'entrer une nouvelle valeur
+
+Puisque ce programme fonctionne majoritairement en interne, le déroulement interne du programme sera expliqué dans d'autres documents en suivant cette ordre:
+1- Entrée du sudoku
+(Boucle jusqu'à résolution ou blocage du programme)
+2- Détection des valeurs possibles pour chaque case
+3- Résolution de la première case possible
+(Détection de si quelque chose a changé durant cette exécution de la grille)
+(Si rien n'a changé)
+4- Résolution avancée du sudoku
+(Si quelque chose a changé)
+(Détection de si le sudoku est résolu)
+(Si oui)
+- On affiche le sudoku résolu et on attends que l'utilisateur appuie sur une touche avant de fermer la console
+(Si non)
+(On recommence la boucle)
+(Fin de la boucle)

@@ -1,5 +1,13 @@
-﻿[À remplir...]
+﻿[Calculatrice]
+Peut être demandé lors de l'ouverture de la console en écrivant "calculatrice", avec ou sans majuscule. Aucune autre saisie n'est tolérée.
 
-(Dans ce document-ci, il sera plus de faire un constat des fonctions utilisables, une table
-des matières en soi... L'utilisation et le déroulement des fonctions se fera dans leur
-fiche individuelle prévue à cet effet)
+[Résumé]
+Il s'agit d'une calculatrice simple sans mémoire de réponse et qui peut effectuer quelques opérations mathématiques.
+
+[Liste des opérations mathématiques implémentées]
+- Addition
+- Soustraction
+- Multiplication
+- Division
+- Racine
+- Exponentielle

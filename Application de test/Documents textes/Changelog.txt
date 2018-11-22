@@ -1,13 +1,12 @@
 ﻿[Changelog] 
-Sachez que la composante "Console multi-fonctionnelle basique" est mise à jour à chaque fois qu'un autre de ses
-composantes est mise à jour. Il est donc normal que le changelog de la composante réfère de temps en temps au changelog
-d'une autre composante car seule cette dernière a été affectée.
+Sachez que la composante "Console multi-fonctionnelle basique" est mise à jour à chaque fois qu'un autre de ses composantes est mise à jour. Il est donc normal que le changelog de la composante réfère de temps en temps au changelog d'une autre composante car seule cette dernière a été affectée.
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
 ┃           Liste des composantes           ┃   Version actuelle  ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━┫
-┃   - Console multi-fonctionnelle basique   ┃             2.0.1:1 ┃
+┃   - Console multi-fonctionnelle basique   ┃             2.1.0   ┃
 ┃   - Calculatrice                          ┃             2.0.1:1 ┃
+┃   - Sudoku Solver                         ┃             1.0.0   ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━┛
 
 {Console multi-fonctionnelle basique}
@@ -30,14 +29,18 @@ d'une autre composante car seule cette dernière a été affectée.
       ┗━━━━━[1.2.0]
             {Voir le changelog de la calculatrice version 2.0.0}
 [2.X.X]
-┗━━━━━[2.0.X]
-      ┣━━━━━[2.0.0]
-      ┃     Migration de la version du .NET Framework 4.7.1 vers la version 4.7.2
-      ┣━━━━━[2.0.1]
-	  ┃     Il a y a désormais le titre de la console qui change au cours de son opération, à vous d'y porter attention
-      ┗━━━━━[2.0.1:1]
-	        Division des codes en plusieurs fichiers (un pour chaque fonction). Du coup, il sera plus facile pour moi de
-			me retrouver dans mon code
+┣━━━━━[2.0.X]
+┃     ┣━━━━━[2.0.0]
+┃     ┃     Migration de la version du .NET Framework 4.7.1 vers la version 4.7.2
+┃     ┣━━━━━[2.0.1]
+┃     ┃     Il a y a désormais le titre de la console qui change au cours de son opération, à vous d'y porter attention
+┃     ┗━━━━━[2.0.1:1]
+┃           Division des codes en plusieurs fichiers (un pour chaque fonction). Du coup, il sera plus facile pour moi de
+┃           me retrouver dans mon code
+┗━━━━━[2.1.X]
+      ┗━━━━━[2.1.0]
+            Ajout de la composante "Sudoku Solver". Il s'agit d'un solutionneur de sudoku (voir son document info pour
+			plus d'informations)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -81,3 +84,10 @@ d'une autre composante car seule cette dernière a été affectée.
 			mêmes}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+{Sudoku Solver}
+[1.X.X]
+┗━━━━━[1.0.X]
+      ┗━━━━━[1.0.0]
+            Ajout de la composante dans la console multi-fonctionnelle basique. Voir son document informatif pour en
+			savoir plus

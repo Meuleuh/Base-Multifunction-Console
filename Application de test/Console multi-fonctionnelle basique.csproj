@@ -105,7 +105,7 @@
     <Content Include="Documents textes\Sudoku Solver.txt" />
     <Content Include="Documents textes\Sudoku Solver\Résolution avancée du sudoku.txt" />
     <Content Include="Documents textes\Sudoku Solver\Résolution du sudoku.txt" />
-    <Content Include="Documents textes\Sudoku Solver\Détection des valeurs possibles.txt" />
+    <Content Include="Documents textes\Sudoku Solver\Détection des valeurs possibles pour chaque case.txt" />
     <Content Include="Documents textes\Sudoku Solver\Entrée du sudoku.txt" />
   </ItemGroup>
   <ItemGroup>

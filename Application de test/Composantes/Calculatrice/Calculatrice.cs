@@ -66,6 +66,6 @@ namespace Console_multi_fonctionnelle_basique
             Console.WriteLine("Appuyez sur une touche pour fermer la calculatrice...");
             Console.ReadKey();
             Environment.Exit(0);
-        }
-    } //Version 2.0.1:1
+        } //Version 2.0.1:1
+    }
 }

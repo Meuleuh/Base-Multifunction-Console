@@ -114,6 +114,6 @@ namespace Console_multi_fonctionnelle_basique
 
             //Terminer le programme après l'appui de l'usager
             Console.ReadKey();
-        }
-    } //Version Pre-Release
+        } //Version 1.0.0
+    }
 }
