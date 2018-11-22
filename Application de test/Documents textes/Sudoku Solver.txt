@@ -1,0 +1,6 @@
+﻿[À remplir]
+
+(Note: Inclure le fait de dire que les documents liés à cette composante n'explique pas comment
+utiliser le sudoku mais plutôt comment le programme fonctionne en lui-même... Son fonctionnement
+sera inscrit ici à la place pour que le monde puisse savoir comment l'utiliser sans devoir entrer
+dans les détails.)

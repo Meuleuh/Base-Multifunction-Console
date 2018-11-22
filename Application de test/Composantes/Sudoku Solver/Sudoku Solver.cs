@@ -94,7 +94,7 @@ namespace Console_multi_fonctionnelle_basique
                 solved = tempSolved;
                 if (tempSudokuGrid == SudokuGrid)
                 {
-                    UneasySolving(SudokuGrid);
+                    AlmostRandomSolving(SudokuGrid);
                 }
                 else
                 {

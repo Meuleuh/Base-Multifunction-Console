@@ -1,0 +1,5 @@
+﻿[À remplir...]
+
+(Noter comment j'y suis arrivé durant son développement pourait être une bonne idée pour
+lorsque viendra le temps de faire la vraie documentation qui sera présente dans ce
+document)

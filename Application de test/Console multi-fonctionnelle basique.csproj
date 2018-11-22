@@ -69,7 +69,7 @@
     <Compile Include="Composantes\Sudoku Solver\Fonctions\House detection.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Row Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Row detection.cs" />
-    <Compile Include="Composantes\Sudoku Solver\Fonctions\Uneasy Solving.cs" />
+    <Compile Include="Composantes\Sudoku Solver\Fonctions\Almost Random Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Sudoku Querry.cs" />
     <Compile Include="Console multi-fonctionnelle basique.cs" />
     <Compile Include="Composantes\Calculatrice\Calculatrice.cs" />
@@ -93,6 +93,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Documents textes\Calculatrice.txt" />
     <Content Include="Documents textes\Calculatrice\Addition.txt" />
     <Content Include="Documents textes\Calculatrice\Division.txt" />
     <Content Include="Documents textes\Calculatrice\Exponentielle.txt" />
@@ -101,6 +102,11 @@
     <Content Include="Documents textes\Calculatrice\Multiplication.txt" />
     <Content Include="Documents textes\Changelog.txt" />
     <Content Include="Documents textes\Infos.txt" />
+    <Content Include="Documents textes\Sudoku Solver.txt" />
+    <Content Include="Documents textes\Sudoku Solver\Résolution avancée du sudoku.txt" />
+    <Content Include="Documents textes\Sudoku Solver\Résolution du sudoku.txt" />
+    <Content Include="Documents textes\Sudoku Solver\Détection des valeurs possibles.txt" />
+    <Content Include="Documents textes\Sudoku Solver\Entrée du sudoku.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">

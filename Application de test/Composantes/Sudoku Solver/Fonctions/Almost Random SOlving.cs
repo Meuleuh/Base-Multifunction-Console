@@ -8,7 +8,7 @@ namespace Console_multi_fonctionnelle_basique
 {
     public partial class SudokuSolver
     {
-        GridValue[,] UneasySolving(GridValue[,] SudokuGrid)
+        GridValue[,] AlmostRandomSolving(GridValue[,] SudokuGrid)
         {
             List<int> RemainingGridValue = new List<int>();
             for (int i = 0; i < 9; i++)
