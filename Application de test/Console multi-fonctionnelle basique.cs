@@ -17,6 +17,7 @@ namespace Console_multi_fonctionnelle_basique
                 Console.WriteLine("Liste des programmes (aucune erreur de frappe est accepté, incluant l'absence d'une majuscule");
                 Console.WriteLine("- Calculatrice");
                 Console.WriteLine("- Sudoku Solver");
+                Console.WriteLine("- Analyseur de vecteur");
                 Console.WriteLine();
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi.ToLower() == "calculatrice")
@@ -27,6 +28,11 @@ namespace Console_multi_fonctionnelle_basique
                 else if (PrgChoisi.ToLower() == "sudoku solver")
                 {
                     SudokuSolver sudokuSolver = new SudokuSolver();
+                    repeatIt = false;
+                }
+                else if (PrgChoisi.ToLower() == "analyseur de vecteur" || PrgChoisi.ToLower() == "vecteur")
+                {
+                    AnalyseurDeVecteur analyseurDeVecteur = new AnalyseurDeVecteur();
                     repeatIt = false;
                 }
                 else
