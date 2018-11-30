@@ -40,7 +40,8 @@ Sachez que la composante "Console multi-fonctionnelle basique" est mise à jour 
 ┗━━━━━[2.1.X]
       ┗━━━━━[2.1.0]
             Ajout de la composante "Sudoku Solver". Il s'agit d'un solutionneur de sudoku (voir son document info pour
-			plus d'informations)
+			plus d'informations). Ajout également d'une composante qui sera implémentée dans la calculatrice par la suite:
+			Un analyseur de vecteur. Vous aurez plus de détail quand il sera intégré à même la calculatrice.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -80,7 +81,7 @@ Sachez que la composante "Console multi-fonctionnelle basique" est mise à jour 
 	  ┃ 	{Voir changelog de la console multi-fonctionnelle basique version 2.0.1 puisque les modifications sont les
 	  ┃ 	mêmes}
       ┗━━━━━[2.0.1:1]
-	        {Voir changelog de la console multi-fonctionnelle basique version 2.0.2 puisque les modifications sont les
+	        {Voir changelog de la console multi-fonctionnelle basique version 2.0.1:1 puisque les modifications sont les
 			mêmes}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -90,4 +91,4 @@ Sachez que la composante "Console multi-fonctionnelle basique" est mise à jour 
 ┗━━━━━[1.0.X]
       ┗━━━━━[1.0.0]
             Ajout de la composante dans la console multi-fonctionnelle basique. Voir son document informatif pour en
-			savoir plus
+			savoir plus.

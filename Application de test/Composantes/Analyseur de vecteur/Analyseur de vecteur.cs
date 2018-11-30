@@ -58,6 +58,6 @@ namespace Console_multi_fonctionnelle_basique
             Console.WriteLine();
             Console.WriteLine("Appuyez sur une touche pour fermer");
             Console.ReadKey();
-        }  // Version 1.0.0
+        }  // Version Temp
     }
 }

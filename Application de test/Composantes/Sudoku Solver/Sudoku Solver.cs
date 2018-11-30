@@ -8,6 +8,7 @@ namespace Console_multi_fonctionnelle_basique
         //Code d'initialisation
         public SudokuSolver()
         {
+            Console.Title = "Sudoku Solver";
             Console.Clear();
             SudokuGridCreator(out GridValue[,] SudokuGrid);
             bool repeatQuerry = true;

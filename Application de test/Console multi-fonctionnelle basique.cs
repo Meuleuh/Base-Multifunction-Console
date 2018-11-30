@@ -17,7 +17,7 @@ namespace Console_multi_fonctionnelle_basique
                 Console.WriteLine("Liste des programmes (aucune erreur de frappe est accepté, incluant l'absence d'une majuscule");
                 Console.WriteLine("- Calculatrice");
                 Console.WriteLine("- Sudoku Solver");
-                Console.WriteLine("- Analyseur de vecteur");
+                Console.WriteLine("- Analyseur de vecteur (Temporairement détaché)");
                 Console.WriteLine();
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi.ToLower() == "calculatrice")
