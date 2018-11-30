@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Composantes\Analyseur de vecteur\Analyseur de vecteur.cs" />
+    <Compile Include="Composantes\Analyseur de vecteur\X et Y.cs" />
     <Compile Include="Composantes\Analyseur de vecteur\Norme et angle.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Column Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\House Solving.cs" />

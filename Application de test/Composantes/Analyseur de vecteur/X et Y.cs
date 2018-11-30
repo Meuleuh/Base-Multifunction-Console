@@ -4,14 +4,14 @@ namespace Console_multi_fonctionnelle_basique
 {
     public partial class AnalyseurDeVecteur
     {
-        public void NormeEtAngle(out decimal norme, out decimal angle, out decimal x, out decimal y)
+        public void XEtY(out decimal norme, out decimal angle, out decimal x, out decimal y)
         {
             Console.Clear();
-            Console.Write("Entrez la norme: ");
-            string TempNorme = Console.ReadLine();
+            Console.Write("Entrez la valeur de x: ");
+            string TempX = Console.ReadLine();
             try
             {
-                norme = Convert.ToDecimal(TempNorme);
+                x = Convert.ToDecimal(TempX);
             }
             catch
             {
@@ -19,14 +19,14 @@ namespace Console_multi_fonctionnelle_basique
                 Console.WriteLine("Votre valeur entrée n'est valide");
                 Console.WriteLine("Appuyez sur une touche pour entrer de nouveau les vairables");
                 Console.ReadKey();
-                NormeEtAngle(out norme, out angle, out x, out y);
+                XEtY(out norme, out angle, out x, out y);
             }
-            norme = Convert.ToDecimal(TempNorme);
+            x = Convert.ToDecimal(TempX);
             Console.Write("Entrez l'angle: ");
-            string TempAngle = Console.ReadLine();
+            string TempY = Console.ReadLine();
             try
             {
-                angle = Convert.ToDecimal(TempAngle);
+                y = Convert.ToDecimal(TempY);
             }
             catch
             {
@@ -34,25 +34,22 @@ namespace Console_multi_fonctionnelle_basique
                 Console.WriteLine("Votre valeur entrée n'est valide");
                 Console.WriteLine("Appuyez sur une touche pour entrer de nouveau les vairables");
                 Console.ReadKey();
-                NormeEtAngle(out norme, out angle, out x, out y);
+                XEtY(out norme, out angle, out x, out y);
             }
-            angle = Convert.ToDecimal(TempAngle);
+            y = Convert.ToDecimal(TempY);
             Console.WriteLine("L'entrée est valide, calcul en cours...");
-            if (angle == 90 || angle == 270)
+            norme = Convert.ToDecimal(Math.Abs(Math.Sqrt(Math.Pow(decimal.ToDouble(x),2) + Math.Pow(decimal.ToDouble(y),2))));
+            if (x > 0 && y > 0)
             {
-                x = 0;
+                angle = Convert.ToDecimal(Math.Atan(decimal.ToDouble(x)/decimal.ToDouble(y))*(180/Math.PI));
+            }
+            else if ((x < 0 && y > 0) || (x > 0 && y < 0))
+            {
+                angle = Convert.ToDecimal(Math.Atan(decimal.ToDouble(x) / decimal.ToDouble(y)) * (180 / Math.PI)) + 180;
             }
             else
             {
-                x = Convert.ToDecimal(decimal.ToDouble(norme) * Math.Cos(decimal.ToDouble(angle) * (Math.PI / 180)));
-            }
-            if (angle == 0 || angle == 180)
-            {
-                y = 0;
-            }
-            else
-            {
-                y = Convert.ToDecimal(decimal.ToDouble(norme) * Math.Sin(decimal.ToDouble(angle) * (Math.PI / 180)));
+                angle = Convert.ToDecimal(Math.Atan(decimal.ToDouble(x) / decimal.ToDouble(y)) * (180 / Math.PI)) + 360;
             }
             Console.WriteLine("Calcul effectué");
         }

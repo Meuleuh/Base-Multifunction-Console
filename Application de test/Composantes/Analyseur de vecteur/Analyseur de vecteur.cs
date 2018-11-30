@@ -30,14 +30,17 @@ namespace Console_multi_fonctionnelle_basique
                 AnalyseurDeVecteur analyseurDeVecteur = new AnalyseurDeVecteur();
             }
             typeInput = typeInput.ToLower();
-
+            decimal norme = 0;
+            decimal angle = 0;
+            decimal x = 0;
+            decimal y = 0;
             if (typeInput.Contains("norme") || typeInput.Contains("angle"))
             {
-                NormeEtAngle(out decimal norme, out decimal angle, out decimal x, out decimal y);
+                NormeEtAngle(out norme, out angle, out x, out y);
             }
             else if (typeInput.Contains("x") || typeInput.Contains("y"))
             {
-                XEtY(norme, angle, x, y);
+                XEtY(out norme, out angle, out x, out y);
             }
             else
             {
@@ -52,6 +55,9 @@ namespace Console_multi_fonctionnelle_basique
             Console.WriteLine("Angle du vecteur: " + angle + "˚");
             Console.WriteLine("x: " + x);
             Console.WriteLine("y: " + y);
-        }
+            Console.WriteLine();
+            Console.WriteLine("Appuyez sur une touche pour fermer");
+            Console.ReadKey();
+        }  // Version 1.0.0
     }
 }
