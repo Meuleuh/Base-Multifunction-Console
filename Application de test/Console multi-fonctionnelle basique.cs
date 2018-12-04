@@ -35,6 +35,11 @@ namespace Console_multi_fonctionnelle_basique
                     AnalyseurDeVecteur analyseurDeVecteur = new AnalyseurDeVecteur();
                     repeatIt = false;
                 }
+                else if (PrgChoisi.ToLower() == "single" || PrgChoisi.ToLower() == "single use stuff")
+                {
+                    SingleUseStuff singleUseStuff = new SingleUseStuff();
+                    repeatIt = false;
+                }
                 else
                 {
                     Console.WriteLine("Programme invalide");
