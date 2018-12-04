@@ -252,6 +252,7 @@ namespace Console_multi_fonctionnelle_basique
                                         }
                                     }
                                 }
+                                solved = tempSolved;
                             }
                         }
                     }
