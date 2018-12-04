@@ -10,16 +10,23 @@ namespace Console_multi_fonctionnelle_basique
     {
         GridValue[,] AlmostRandomSolving(GridValue[,] SudokuGrid)
         {
-            List<int> RemainingGridValue = new List<int>();
+            List<(int,int)> RemainingGridValue = new List<(int,int)>();
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9; j++)
                 {
-                    if (SudokuGrid[i,j].AlreadySolved == false)
+                    if (SudokuGrid[i, j].AlreadySolved == false)
                     {
-                        RemainingGridValue.Add((i*10)+j);
+                        RemainingGridValue[RemainingGridValue.Count + 1] = (i,j);
                     }
                 }
+            }
+            bool solved = false;
+            GridValue[,] tempSudoku = SudokuGrid;
+            switch (RemainingGridValue.Count)
+            {
+                case 1:
+                    break;
             }
 
             /*
