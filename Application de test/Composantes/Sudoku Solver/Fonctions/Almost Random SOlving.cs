@@ -22,10 +22,239 @@ namespace Console_multi_fonctionnelle_basique
                 }
             }
             bool solved = false;
-            GridValue[,] tempSudoku = SudokuGrid;
             switch (RemainingGridValue.Count)
             {
                 case 1:
+                    for (int grid1 = 1; grid1 < 10; grid1++)
+                    {
+                        if (SudokuGrid[RemainingGridValue[1].Item1, RemainingGridValue[1].Item2].PossibleValues.Contains(grid1))
+                        {
+                            GridValue[,] tempSudoku = SudokuGrid;
+                            tempSudoku[RemainingGridValue[1].Item1, RemainingGridValue[1].Item2].Value = grid1;
+                            //Début du script de vérification de la solution du Sudoku... Un foreach serait envisageable mais il devra tout de même être utilisé dans chaque case à chaque modification de variable!
+                            foreach ((int,int) gridPosition in RemainingGridValue)
+                            {
+                                bool tempSolved = true;
+                                for (int i = 1; i < 10; i++)
+                                {
+                                    if (i != gridPosition.Item1)
+                                    {
+                                        if (tempSudoku[i, gridPosition.Item2].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                        {
+                                            tempSolved = false;
+                                            break;
+                                        }
+                                    }
+                                }
+                                if (tempSolved == true)
+                                {
+                                    for (int j = 1; j < 10; j++)
+                                    {
+                                        if (j != gridPosition.Item2)
+                                        {
+                                            if (tempSudoku[gridPosition.Item1, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                            {
+                                                tempSolved = false;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+                                if (tempSolved == true)
+                                {
+                                    if (gridPosition.Item1 >= 1 && gridPosition.Item1 <= 3 && gridPosition.Item2 >= 1 && gridPosition.Item2 <= 3)
+                                    {
+                                        for (int i = 1; i < 4; i++)
+                                        {
+                                            for (int j = 1; j < 4; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 4 && gridPosition.Item1 <= 6 && gridPosition.Item2 >= 1 && gridPosition.Item2 <= 3)
+                                    {
+                                        for (int i = 4; i < 7; i++)
+                                        {
+                                            for (int j = 1; j < 4; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 7 && gridPosition.Item1 <= 9 && gridPosition.Item2 >= 1 && gridPosition.Item2 <= 3)
+                                    {
+                                        for (int i = 7; i < 10; i++)
+                                        {
+                                            for (int j = 1; j < 4; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 1 && gridPosition.Item1 <= 3 && gridPosition.Item2 >= 4 && gridPosition.Item2 <= 6)
+                                    {
+                                        for (int i = 1; i < 4; i++)
+                                        {
+                                            for (int j = 4; j < 7; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 4 && gridPosition.Item1 <= 6 && gridPosition.Item2 >= 4 && gridPosition.Item2 <= 6)
+                                    {
+                                        for (int i = 4; i < 7; i++)
+                                        {
+                                            for (int j = 4; j < 7; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 7 && gridPosition.Item1 <= 9 && gridPosition.Item2 >= 4 && gridPosition.Item2 <= 6)
+                                    {
+                                        for (int i = 7; i < 10; i++)
+                                        {
+                                            for (int j = 4; j < 7; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 1 && gridPosition.Item1 <= 3 && gridPosition.Item2 >= 7 && gridPosition.Item2 <= 9)
+                                    {
+                                        for (int i = 1; i < 4; i++)
+                                        {
+                                            for (int j = 7; j < 10; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 4 && gridPosition.Item1 <= 6 && gridPosition.Item2 >= 7 && gridPosition.Item2 <= 9)
+                                    {
+                                        for (int i = 4; i < 7; i++)
+                                        {
+                                            for (int j = 7; j < 10; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (gridPosition.Item1 >= 7 && gridPosition.Item1 <= 9 && gridPosition.Item2 >= 7 && gridPosition.Item2 <= 9)
+                                    {
+                                        for (int i = 7; i < 10; i++)
+                                        {
+                                            for (int j = 7; j < 10; j++)
+                                            {
+                                                if (i != gridPosition.Item1 && j != gridPosition.Item2)
+                                                {
+                                                    if (tempSudoku[i, j].Value == tempSudoku[gridPosition.Item1, gridPosition.Item2].Value)
+                                                    {
+                                                        tempSolved = false;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (tempSolved == false)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     break;
             }
 
@@ -43,6 +272,14 @@ namespace Console_multi_fonctionnelle_basique
              * GridValue... je sais plus...! C'est dur en vrai de résoudre les sudoku qui
              * auront besoin de ce script là en vrai, c'est encore plus dur de faire un script
              * pour le faire à notre place!
+             * 
+             * (Rajouté durant le développement) Le script sera hyper complexe car il devra revérifier
+             * si le sudoku est résolu mais pour toutes les cases! Du coup, la verification qui est déjà
+             * complexe juste pour une case devra être répètée pour chaque case! (Si la vérification est
+             * aussi complexe, c'est puisqu'il est impossible d'utiliser l'ancienne méthode qui consistait
+             * juste à vérifier si chaque case avait une valeur d'attribuée, car une valeur potentielle sera
+             * attribuée à chaque case restante, ce qui activerait cette condition même si le sudoku est
+             * invalide...)
              */
             return SudokuGrid;
         }
