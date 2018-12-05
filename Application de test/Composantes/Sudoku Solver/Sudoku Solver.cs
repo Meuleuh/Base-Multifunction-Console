@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Console_multi_fonctionnelle_basique
 {
@@ -62,7 +61,7 @@ namespace Console_multi_fonctionnelle_basique
                         {
                             SudokuGrid = HouseSolving(SudokuGrid, i, j);
                         }
-                        if (SudokuGrid[i,j].AlreadySolved == true)
+                        if (SudokuGrid[i, j].AlreadySolved == true)
                         {
                             breakThrough = true;
                         }
@@ -81,7 +80,7 @@ namespace Console_multi_fonctionnelle_basique
                 {
                     for (int tempJ = 0; tempJ < 9; tempJ++)
                     {
-                        if (SudokuGrid [tempI,tempJ].AlreadySolved == false)
+                        if (SudokuGrid[tempI, tempJ].AlreadySolved == false)
                         {
                             tempSolved = false;
                             break;
