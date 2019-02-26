@@ -67,6 +67,7 @@
     <Compile Include="Composantes\Analyseur de vecteur\Analyseur de vecteur.cs" />
     <Compile Include="Composantes\Analyseur de vecteur\X et Y.cs" />
     <Compile Include="Composantes\Analyseur de vecteur\Norme et angle.cs" />
+    <Compile Include="Composantes\Jeu de carte\CardGame.cs" />
     <Compile Include="Composantes\Single Use Stuff\Single Use Menu.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\Column Solving.cs" />
     <Compile Include="Composantes\Sudoku Solver\Fonctions\House Solving.cs" />
