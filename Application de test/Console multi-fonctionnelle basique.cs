@@ -18,7 +18,6 @@ namespace Console_multi_fonctionnelle_basique
                 Console.WriteLine("- Calculatrice");
                 Console.WriteLine("- Sudoku Solver");
                 Console.WriteLine("- Analyseur de vecteur (Temporairement détaché)");
-                Console.WriteLine("- Jeu de carte");
                 Console.WriteLine();
                 string PrgChoisi = Console.ReadLine();
                 if (PrgChoisi.ToLower() == "calculatrice")
@@ -39,11 +38,6 @@ namespace Console_multi_fonctionnelle_basique
                 else if (PrgChoisi.ToLower() == "single" || PrgChoisi.ToLower() == "single use stuff")
                 {
                     SingleUseStuff singleUseStuff = new SingleUseStuff();
-                    repeatIt = false;
-                }
-                else if (PrgChoisi.ToLower() == "jeu de cartes" || PrgChoisi.ToLower() == "cartes" || PrgChoisi.ToLower() == "carte")
-                {
-                    CardGame cardGame = new CardGame();
                     repeatIt = false;
                 }
                 else
